@@ -60,4 +60,4 @@ With the public key, we want to supply it to GitHub. Take a look at the screen s
 
 [link to the settings page, just make sure you're signed in before clicking](https://github.com/settings/profile).
 
-![settings area of github sssh][./assets/img/sshkey.png]
+![settings area of github sssh](./assets/img/sshkey.png)
