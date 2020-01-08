@@ -4,12 +4,12 @@ console.log('it works!')
  * The intent of this document is to outline some
  * basic JavaScript syntax and to also explore
  * fundamental concepts which we will pick up 
- * from in week 02. Please expect to be confused
- * by some of the concepts and take note of what does
- * not make sense to you. After you have jotted down
+ * in week 02. Please expect to be confused by some
+ * of the concepts and take note of what does not
+ * make sense to you. After you have jotted down
  * any items from this file that may have prompted
- * a question, please jot it down and make sure to 
- * save it for class or emailing me personally at
+ * a question, please bring the question to class or 
+ * emailing me at:
  * jmorenstein@georgebrown.ca
  * 
  * In this file, we will be exploring the notion of 
@@ -19,10 +19,10 @@ console.log('it works!')
  * code. Another thing to take note of, is how this file
  * is used in the index.html found in this same folder.
  * 
- * Please also take a look at the header and body of the
+ * Please also look at the header and body of the
  * HTML document as there are some notes there for you too.
  * 
- * Oh BTW, in programming languages there is a concepts
+ * Oh BTW, in programming languages there is a concept
  * known as "comments". You're actually reading one right
  * now. Comments allow developers to leave notes to help
  * aide the coding process. Comments do not get interpreted
@@ -31,10 +31,11 @@ console.log('it works!')
  * like but there are also single line comments as well.
  * 
  * See below for a single line comment and take note of the
- * first two characters right before the "Hi!"
+ * first two characters right before the "Hi!" as that's how
+ * a single line comment is initialized.
  */
 
- // Hi! Here is that single line comment I was telling you about
+// Hi! Here is that single line comment I was telling you about
 
 // we can capture the header element by it's ID
 const header1 = document.getElementById('header')
