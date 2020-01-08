@@ -201,7 +201,7 @@ console.log(isAuthorized)
  * 4. a value (null)
  * 
  * We don't need all four ingredients for a variable salad, sometimes we just want to initialize
- * and identigier. Let's see what that looks like below.
+ * and identifier. Let's see what that looks like below.
  */
 
 /**
@@ -210,9 +210,10 @@ console.log(isAuthorized)
  * and `let`. Each keyword behaves differently so we must know the distinctions between
  * them but we'll save the specifics for later.
  *
- * All that's important to note right now, is tha if you want to create a variable,
- * it must start with either `var`, `const` or `let`. Below we are going to initialize
- * two variables using var and let.
+ * All that's important to note right now, is that if you want to create a variable,
+ * it must start with either `var`, `const` or `let`. If not it is considered to be
+ * globally scoped which means it can be accessed anywhere. This commonly introduces bugs. 
+ * Below we are going to initialize two variables using var and let.
  */
 
 // note that we are not assigning a value type. We are only creating a name for a variable.
