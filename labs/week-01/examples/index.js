@@ -1,5 +1,41 @@
 console.log('it works!')
 
+/**
+ * The intent of this document is to outline some
+ * basic JavaScript syntax and to also explore
+ * fundamental concepts which we will pick up 
+ * from in week 02. Please expect to be confused
+ * by some of the concepts and take note of what does
+ * not make sense to you. After you have jotted down
+ * any items from this file that may have prompted
+ * a question, please jot it down and make sure to 
+ * save it for class or emailing me personally at
+ * jmorenstein@georgebrown.ca
+ * 
+ * In this file, we will be exploring the notion of 
+ * "types" in JavaScript, what they are and how they're
+ * used. We'll also have a very gentle introduction to
+ * control statements which help us make decisions using
+ * code. Another thing to take note of, is how this file
+ * is used in the index.html found in this same folder.
+ * 
+ * Please also take a look at the header and body of the
+ * HTML document as there are some notes there for you too.
+ * 
+ * Oh BTW, in programming languages there is a concepts
+ * known as "comments". You're actually reading one right
+ * now. Comments allow developers to leave notes to help
+ * aide the coding process. Comments do not get interpreted
+ * by the languages engine. They are here only to make lives
+ * easier for humans. This is what a multiline comment looks
+ * like but there are also single line comments as well.
+ * 
+ * See below for a single line comment and take note of the
+ * first two characters right before the "Hi!"
+ */
+
+ // Hi! Here is that single line comment I was telling you about
+
 // we can capture the header element by it's ID
 const header1 = document.getElementById('header')
 
