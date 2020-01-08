@@ -16,9 +16,27 @@ cd comp1231
 git init # initialiazes a directory as a git project
 # WARNING: do not execute this command in parent directories of git projects or you will create submodules and headaches
 
+# creating our first file using the bash echo command
+# remember, echo outputs a value 
+# $ echo "hello" 
+# would print hello
+
+# echo "# comp1231" >> README.md
+# Remember >> is the append operator in bash
+# it appends to a file. If you forget one >
+# you will over write the file
+
+echo "# comp1231" >> README.md
+# we've now echoed # comp1231 into a file called README.md
+
+# we can verify this by using the list command
+ls
+
+# we can also output the contents of README.me by using cat
+cat README.md
 # adding a file to be tracked by git
-git add FILENAME # FILENAME is the name of the file you'd like to add
-git commit -m 'a descriptive message specifying the work completed' # try to make the message as descriptive as possible so peers and your future self know what work was committed
+git add README.md # FILENAME is the name of the file you'd like to add
+git commit -m 'added a readme file' # try to make the message as descriptive as possible so peers and your future self know what work was committed
 
 git remote add origin git@github.com/YOUR_NAME/YOUR_REPO.git
 # the above command creates an alias, in this case we called it origin. origin will point to your repository so when you push your code it has a remote address to send the work too.
