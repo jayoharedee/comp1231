@@ -45,7 +45,7 @@ console.log("it works!");
 // Hi! Here is that single line comment I was telling you about
 
 // we can capture the header element by it's ID
-const header1 = document.getElementById("header");
+const header1 = document.getElementById("header"); // capturing an html element using JS, we now have an HTML element which can be referrenced by header1
 
 /**
  * Using the typeof key we can determine the type of
@@ -68,7 +68,7 @@ console.log(typeof header1); // object
 // dot notation, please take notice as to how we capture
 // the inner HTML using the dot notation on header1 below
 const innerHTML = header1.innerHTML;
-console.log(innerHTML);
+console.log(innerHTML); // "First Header Element"
 console.log(typeof innerHTML); // type: string
 
 /**
@@ -87,6 +87,9 @@ console.log(typeof innerHTML); // type: string
  * Yes, I am that petty when it comes to computational taxation.
  */
 
+ // The string obtained using the dotnotation on the header we captured by ID
+ // would resemble "First Header Element" or 'First Header Element' if we wanted to use single quotes
+
 /**
  * Boolean Type!
  *
@@ -94,7 +97,7 @@ console.log(typeof innerHTML); // type: string
  * may just not know it. It essentially is used to describe if something
  * is true or false. The result of the boolean value, allows us to make decisions
  * programatically. Boolean types in JS can be quirky and we'll look at the notion
- * of "truthy" and "falsy" but for now, please just not that Boolean keywords will
+ * of "truthy" and "falsy" but for now, please just note that Boolean keywords will
  * either be true or false.
  *
  * IMPORTANT PLEASE READ BELOW:
@@ -127,7 +130,7 @@ if (shouldChangeBackground) {
 }
 
 // We can change some variables, here is an example of us changing our previous variable
-// to false to explore how we can mutations in code can occurr.
+// to false to explore how mutations/changes in code can occurr.
 shouldChangeBackground = false;
 
 // now that the value is false, our header style
@@ -147,7 +150,7 @@ if (shouldChangeBackground) {
  *
  * If we have an if/else statement just as we do above this multi-line comment
  * 1 out of the 2 block statements will evaluate. Since shouldChangeBackground
- * had the value changed from true to false on line 132 of this file, the `if`
+ * had the value changed from true to false on line 134 of this file, the `if`
  * of the if/else will fail. When this happens, the interpreter executes whaterver
  * code is found in the else. It defaults to else if the initial if (variablename) {}
  * fails. The `else` keyword is used to provide an action should the initial `if` fail
