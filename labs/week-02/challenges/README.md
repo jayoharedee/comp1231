@@ -1,4 +1,4 @@
-### [Back](../../)
+### [Back](../../../)
 
 # Week 02 - Introduction to working with JS
 ## Embedding JavaScript

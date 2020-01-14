@@ -67,7 +67,35 @@ Before we create a variable (an alias or name that stores a value), we must inti
 * `let`
 * `const`
 
+```javascript
+var homeNumber
+let mobileNumber
+
+// const will through an error if we intiialize a variable name with out assigning a value
+// const must take a value on assignment like so
+const name = 'Babe Ruth'
+
+// we won't assign a value to the two number variables at the top of this snippet yet.
+// I just want to demonstrate how initializers look and how the prefix our identifier (variable name)
+```
 ### identifier
 
-An identifier is just an easy name that we can remember that contains a value or - at one point in time we expect to contain a value. Let's pretend that we wanted to create a variable that will hold our name. We don't want to assign a value to it yet, we only want it 
+An identifier is just an easy name that we can remember which contains a value or - at some point in time we expect it to contain a value. Let's pretend that we wanted to create a variable that will hold our name. Given the previous snippet we kind of have an idea of how this looks but let's declare a variable rather than just initialize two identifiers (variable names) as we did above with `homeNumber` and `mobileNumber`.
+
+```javascript
+// to declare a variable, we need the assignment operator and also a value
+let school = 'George Brown College'
+// above we initialized with let, identified with school and used the assignment operator (=) to assign a value to the variable. Now instead of typing out and remember what school all over a code base, we can reference it by school and have the value we need.
+```
+
+### assignment operator
+
+The assignment operator is just an = character. It lives between our identifier (variable name) and the value we want assigned to the variable name.
+
+```javascript
+var emergency = 911
+// here im making up a variable name and assigning it the value 911
+```
+
+### values
 
