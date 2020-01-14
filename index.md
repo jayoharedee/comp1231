@@ -11,17 +11,17 @@
 
  Reach me by email jmorenstein@georgebrown.ca
 
- <h1>Exercise</h1>
+ <h1>Exercises</h1>
 
 
  | Week          | Topics                            | Link                    |
 | ------------- |:---------------------------------:|:-----------------------:|
 | 1             | JS intro, BASH Intro, GitHub, SSH |  
-| 2             | Basc JS skills, workig with values| [Lab 2](./labs/week-02/challenges)
+| 2             | Basc JS skills, workig with values| [Lab 2](./labs/week-02/exercises)
 
- <h1>Challenge</h1>
+ <h1>Challenges</h1>
 
  | Week          | Topics                            | Link                    |
 | ------------- |:---------------------------------:|:-----------------------:|
 | 1             | JS intro, BASH Intro, GitHub, SSH |  |
-| 2             | Basc JS skills, workig with values| [Lab 2](./labs/week-02/exercises)
+| 2             | Basc JS skills, workig with values| [Lab 2](./labs/week-02/challenges)
