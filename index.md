@@ -16,7 +16,7 @@
  | Week          | Topics                            | Link                    |
 | ------------- |:---------------------------------:|:-----------------------:|
 | 1             | JS intro, BASH Intro, GitHub, SSH |  |
-| 2             | Basc JS skills, workig with values| [Lab 2](./exercises/week-02)
+| 2             | Basc JS skills, workig with values| [Lab 2](./labs/week-02/exercises)
 
  <h1>Challenges</h1>
 
