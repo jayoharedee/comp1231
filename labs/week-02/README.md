@@ -1,6 +1,6 @@
 # comp1231
 
-# Commands Used In Week 1
+# Commands Used In Week 2
 
 
 ## Generating SSH Keys
