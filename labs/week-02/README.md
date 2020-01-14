@@ -3,7 +3,7 @@
 # Commands Used In Week 2
 
 
-## Generating SSH Keys
+## Generating SSH [Keys](../../exercises/index.md)
 
 > SSH is a protocol known as Secure Shell. It's used to securely transfer files from a client to a server or a server to a client. There is no password required to use the protocol.
 

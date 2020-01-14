@@ -11,6 +11,10 @@
 
  Reacy me by email jmorenstein@georgebrown.ca
 
+ ### Exercises
+ 
+ ### Commands and things used in class
+
  | Week          | Topics                            | Link                    |
 | ------------- |:---------------------------------:|:-----------------------:|
 | 1             | JS intro, BASH Intro, GitHub, SSH | [Lab 1](./labs/week-01) |
