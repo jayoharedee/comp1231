@@ -85,3 +85,18 @@ git push -u origin master
 ls -la # lists the content of the directory, including hidden files
 ```
 
+```bash
+# want to delete a directory?
+rm -rf DIR_NAME
+
+# need to traverse back a directory?
+cd ../
+
+# how about two?
+cd ../../
+
+# three?
+cd ../../../
+
+# hopefully you get the picture as to how to move around. remember sometimes it's just easier to go home with `cd` and then hitting enter
+```
