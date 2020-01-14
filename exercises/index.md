@@ -1,1 +1,1 @@
-# Test Page
+# Exercise Week 02 - Embedding JS

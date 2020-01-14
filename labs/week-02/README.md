@@ -3,11 +3,12 @@
 # Commands Used In Week 2
 
 
-## Generating SSH [Keys](../../exercises/index.md)
+## Embedding JavaScript
 
-> SSH is a protocol known as Secure Shell. It's used to securely transfer files from a client to a server or a server to a client. There is no password required to use the protocol.
+> There are a number of ways JS can be introduced into an HTML document. For the purpose of this exercise, we're going to look at a few different ways to complete the process. Sometimes JS should be in the head of an HTML document, and sometimes it should be at the bottom of the documents body. This all depends on if the JS imported is blocking the browser's UI thread responsible for producing content on the screen. How do we know if our JS does that?
 
-> SSH allows us to transfer our local work safely to GitHub or any remote server that has our public key.
+## Types of Embeds
+
 ```bash
 # to generate an SSH key pair the following command is used
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
