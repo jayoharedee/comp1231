@@ -12,7 +12,12 @@
  Reacy me by email jmorenstein@georgebrown.ca
 
  ### Exercises
- 
+
+ | Week          | Topics                            | Link                    |
+| ------------- |:---------------------------------:|:-----------------------:|
+| 1             | JS intro, BASH Intro, GitHub, SSH | [Lab 1](./exercises/week-01) |
+| 2             | Basc JS skills, workig with values| [Lab 2](./labs/week-02)
+
  ### Commands and things used in class
 
  | Week          | Topics                            | Link                    |
