@@ -9,19 +9,19 @@
 
  For all course weeks coming up, you'll find your material here. If you can't make it to class, you'll have the material you need to complete the weeks exercise when time permits. The idea is to complete the labs and exercises. If there is something that you're having troubles grasping, just let me know. If you feel like you're falling behind, also let me know so we can ensure that your weekly labs are accounted for.
 
- Reacy me by email jmorenstein@georgebrown.ca
+ Reach me by email jmorenstein@georgebrown.ca
 
- <h1>Exercises</h1>
-
- | Week          | Topics                            | Link                    |
-| ------------- |:---------------------------------:|:-----------------------:|
-| 1             | JS intro, BASH Intro, GitHub, SSH |  |
-| 2             | Basc JS skills, workig with values| [Lab 2](./labs/week-02/exercises)
-
- <h1>Challenges</h1>
+ <h1>Exercise</h1>
 
 
  | Week          | Topics                            | Link                    |
 | ------------- |:---------------------------------:|:-----------------------:|
 | 1             | JS intro, BASH Intro, GitHub, SSH |  
 | 2             | Basc JS skills, workig with values| [Lab 2](./labs/week-02/challenges)
+
+ <h1>Challenge</h1>
+
+ | Week          | Topics                            | Link                    |
+| ------------- |:---------------------------------:|:-----------------------:|
+| 1             | JS intro, BASH Intro, GitHub, SSH |  |
+| 2             | Basc JS skills, workig with values| [Lab 2](./labs/week-02/exercises)
