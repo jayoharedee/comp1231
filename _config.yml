@@ -18,4 +18,4 @@ plugins:
 
 show_downloads: true
 logo: /assets/img/es6.jpeg
-theme: jekyll-theme-architect
+theme: jekyll-theme-modernist
