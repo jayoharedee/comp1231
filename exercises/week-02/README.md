@@ -1,4 +1,4 @@
-# [COMP1231](../../README.md)
+# [COMP1231](../../)
 
 ## Embedding JavaScript
 
