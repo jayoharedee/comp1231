@@ -1,8 +1,11 @@
-# fill in the morning
+### [Back](../../)
 
-# comp1231
+# Week 02 - Introduction to working with JS
 
-# Commands Used In Week 1
+:squirrel:
+> The following is to be completed in a file called lab2.js
+
+Pick a data type found below and create a variable with it. This is known as a variable delcaration. Please look at some of the examples in out
 
 
 ## Generating SSH Keys

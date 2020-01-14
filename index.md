@@ -18,7 +18,8 @@
 | 1             | JS intro, BASH Intro, GitHub, SSH |  |
 | 2             | Basc JS skills, workig with values| [Lab 2](./exercises/week-02)
 
- # Commands and things used in class
+ <h1>Challenges</h1>
+
 
  | Week          | Topics                            | Link                    |
 | ------------- |:---------------------------------:|:-----------------------:|
