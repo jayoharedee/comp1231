@@ -1,33 +1,7 @@
 # comp1231
 
-## Commands Used In Week 1
+# Commands Used In Week 2
 
-```bash
-mkdir # creates a directory
-# mkdir requires one argument containing the dir name
-mkdir comp1231
-
-cd # changes a directory
-# cd will also require an argument to know where to go
-# if no argument is passed `cd` will bring you to your home directory
-cd comp1231
-
-# establishing version control tracking with git
-git init # initialiazes a directory as a git project
-# WARNING: do not execute this command in parent directories of git projects or you will create submodules and headaches
-
-# adding a file to be tracked by git
-git add FILENAME # FILENAME is the name of the file you'd like to add
-git commit -m 'a descriptive message specifying the work completed' # try to make the message as descriptive as possible so peers and your future self know what work was committed
-
-git remote add origin git@github.com/YOUR_NAME/YOUR_REPO.git
-# the above command creates an alias, in this case we called it origin. origin will point to your repository so when you push your code it has a remote address to send the work too.
-
-git push -u origin master
-# the above command will push the work you've committed to the origin you've set. It will also live on the master branch. More on branching later. For now, think of master as your single source of truth for working code. You want master to contain work that has been qualified and working.
-
-ls -la # lists the content of the directory, including hidden files
-```
 
 ## Generating SSH Keys
 
@@ -63,3 +37,66 @@ With the public key, we want to supply it to GitHub. Take a look at the screen s
 ![settings area of github sssh](../../assets/img/sshkey.png)
 
 After you have your public key taken from ~/.ssh/id_rsa.pub (so long you didn't change default settings when generating), you should see something similar to above.
+
+## Bash commands used in our terminal
+
+```bash
+mkdir # creates a directory
+# mkdir requires one argument containing the dir name
+mkdir comp1231
+
+cd # changes a directory
+# cd will also require an argument to know where to go
+# if no argument is passed `cd` will bring you to your home directory
+cd comp1231
+
+# establishing version control tracking with git
+git init # initialiazes a directory as a git project
+# WARNING: do not execute this command in parent directories of git projects or you will create submodules and headaches
+
+# creating our first file using the bash echo command
+# remember, echo outputs a value 
+# $ echo "hello" 
+# would print hello
+
+# echo "# comp1231" >> README.md
+# Remember >> is the append operator in bash
+# it appends to a file. If you forget one >
+# you will over write the file
+
+echo "# comp1231" >> README.md
+# we've now echoed # comp1231 into a file called README.md
+
+# we can verify this by using the list command
+ls
+
+# we can also output the contents of README.me by using cat
+cat README.md
+# adding a file to be tracked by git
+git add README.md # FILENAME is the name of the file you'd like to add
+git commit -m 'added a readme file' # try to make the message as descriptive as possible so peers and your future self know what work was committed
+
+git remote add origin git@github.com/YOUR_NAME/YOUR_REPO.git
+# the above command creates an alias, in this case we called it origin. origin will point to your repository so when you push your code it has a remote address to send the work too.
+
+git push -u origin master
+# the above command will push the work you've committed to the origin you've set. It will also live on the master branch. More on branching later. For now, think of master as your single source of truth for working code. You want master to contain work that has been qualified and working.
+
+ls -la # lists the content of the directory, including hidden files
+```
+
+```bash
+# want to delete a directory?
+rm -rf DIR_NAME
+
+# need to traverse back a directory?
+cd ../
+
+# how about two?
+cd ../../
+
+# three?
+cd ../../../
+
+# hopefully you get the picture as to how to move around. remember sometimes it's just easier to go home with `cd` and then hitting enter
+```
