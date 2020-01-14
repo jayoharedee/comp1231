@@ -1,4 +1,4 @@
-# [COMP1231](../../)
+# [Back](../../)
 
 ## Embedding JavaScript
 
