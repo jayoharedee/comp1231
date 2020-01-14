@@ -1,1 +1,0 @@
-# Exercise Week 02 - Embedding JS
