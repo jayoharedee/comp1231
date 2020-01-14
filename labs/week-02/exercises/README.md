@@ -142,3 +142,17 @@ Sometimes we need to check if things are a number or not. We can use type coersi
 Remember in the boolean section we spoke of the notion of "truthy" and "falsy"? Null is an example of something that would be "falsy". Null represents the intentional absence of a value. Often times if a variable doesn't require a value at the time of initialization.
 
 Null expresses a lack of identification, indicating that a variable points to no object. In APIs, null is often retrieved in a place where an object can be expected but no object is relevant. 
+
+#### Undefined
+
+undefined is a property of the global object; i.e., it is a variable in global scope. The initial value of undefined is the primitive value undefined.
+
+In modern browsers (JavaScript 1.8.5 / Firefox 4+), undefined is a non-configurable, non-writable property per the ECMAScript 5 specification. Even when this is not the case, avoid overriding it.
+
+A variable that has not been assigned a value is of type undefined. A method or statement also returns undefined if the variable that is being evaluated does not have an assigned value. A function returns undefined if a value was not returned.
+
+#### Symbol
+
+The data type symbol is a primitive data type. The Symbol() function returns a value of type symbol, has static properties that expose several members of built-in objects, has static methods that expose the global symbol registry, and resembles a built-in object class, but is incomplete as a constructor because it does not support the syntax "new Symbol()".  
+
+Every symbol value returned from Symbol() is unique.  A symbol value may be used as an identifier for object properties; this is the data type's primary purpose, although other use-cases exist, such as enabling opaque data types, or serving as an implementation-supported unique identifier in general. 
