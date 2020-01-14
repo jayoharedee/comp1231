@@ -99,3 +99,46 @@ var emergency = 911
 
 ### values
 
+Values come in all shapes and sizes in JavaScript. Arguably, there are 6 primary data types.
+
+  * Boolean
+  * String
+  * Number
+  * Null 
+  * Undefined
+  * Symbol
+
+Everything else in JavaScript is an object. The above list is what's known to be "primitive data types". Let's unpack each primitive a little bit and get explanation as to what kind of purpose it actually serves.
+
+#### Boolean
+
+Not to be confused with the Boolean object in JavaScript, the Boolean data type can be safely known to be `true` or `false`. Through coersion, JavaScript can make other data types boolen. Type `!!0` in your console and see what the output is. JS has a concept known as "truthy" and "falsy", these terms are used to represent something that would evaluate as true or false but really, they are not a true Boolean data type at the end of the day.
+
+It can be tricky and Booleans are one quirk in JS where we have to treat true/false with caution. There are strict operators used when comparing values which we'll talk more about later
+
+#### String
+
+Fairly straight forward, Strings are the data type we use when we want to "string" together a group of characters to develop a word. Any word can be looked at as a string. To denote a string, we can wrap our value in "", '' or ``.
+
+Wrapping strings with `` allows for string interpolation so we're able to evaluate variables in a string. An example of this would look something like below:
+
+```javascript
+const SIN = 77338892
+const name = 'Bill'
+const address = '88 Dunworth lane'
+const role = 'admin'
+
+console.log(`${name}'s SIN is ${SIN}, his address is ${address} and he's an ${role}`)
+```
+
+#### Number
+
+When you need to perform some type of calculation, account for a numerical value or work with numbers, you're using the Number data type. There are a lot of methods to play with numbers which we'll be looking at over the next 12 weeks but know that whenever you see a value like the SIN in the snippet above, that's a number.
+
+Sometimes we need to check if things are a number or not. We can use type coersion for this or some methods that are built into the language like isNaN() which will determine if you're value is a number or not depending on how you use the method.
+
+#### Null
+
+Remember in the boolean section we spoke of the notion of "truthy" and "falsy"? Null is an example of something that would be "falsy". Null represents the intentional absence of a value. Often times if a variable doesn't require a value at the time of initialization.
+
+Null expresses a lack of identification, indicating that a variable points to no object. In APIs, null is often retrieved in a place where an object can be expected but no object is relevant. 
