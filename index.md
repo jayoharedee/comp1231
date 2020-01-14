@@ -11,7 +11,7 @@
 
  Reacy me by email jmorenstein@georgebrown.ca
 
- # Exercises
+ <h1>Exercises</h1>
 
  | Week          | Topics                            | Link                    |
 | ------------- |:---------------------------------:|:-----------------------:|
