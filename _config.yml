@@ -1,4 +1,4 @@
-theme: jekyll-theme-hacker
+#theme: jekyll-theme-hacker
 
 title: COMP1231 - Web Programming
 email: jmorenstein@georgebrown.ca
@@ -18,3 +18,4 @@ plugins:
 
 show_downloads: true
 logo: /assets/img/es6.jpeg
+theme: jekyll-theme-architect
