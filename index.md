@@ -18,6 +18,7 @@
 | ------------- |:---------------------------------:|:-----------------------:|
 | 1             | JS intro, BASH Intro, GitHub, SSH |  
 | 2             | Basc JS skills, workig with values| [Lab 2](./labs/week-02/exercises)
+| 3             | Conditional Statements            | [Lab 3](./labs/week-03/exercises)
 
  <h1>Challenges</h1>
 
@@ -25,3 +26,4 @@
 | ------------- |:---------------------------------:|:-----------------------:|
 | 1             | JS intro, BASH Intro, GitHub, SSH |  |
 | 2             | Basc JS skills, workig with values| [Lab 2](./labs/week-02/challenges)
+| 3             | Conditional Statements            | [Lab 3](./labs/week-03/challenges)
