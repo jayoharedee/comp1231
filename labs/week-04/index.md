@@ -51,3 +51,5 @@ for (let index = 0; index < groceryList.length; index++) {
   console.log(element)
 }
 ```
+
+in that last block that looks like `for (let index = 0; index < groceryList.length; index++)` we have one of the necessities of a for loop. `A loop  fx]]]]has to have a beginning and an end`.
