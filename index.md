@@ -13,12 +13,15 @@
 
  <h1>Exercises</h1>
 
+ **Right now Exercise 4 is a WIP (work in progress so I am updating it through out the date.) As long as I figuure Blacboard out, I will send a mass notification when it's compelte. If not you can reference these pages tomorrow in class.**
+
 
  | Week          | Topics                            | Link                    |
 | ------------- |:---------------------------------:|:-----------------------:|
 | 1             | JS intro, BASH Intro, GitHub, SSH |  
 | 2             | Basc JS skills, workig with values| [Lab 2](./labs/week-02/exercises)
 | 3             | Conditional Statements            | [Lab 3](./labs/week-03/exercises)
+| 4             | Iteratives (or making stuff loop) | [Lab 4](./labs/week-04/exercises)
 
  <h1>Challenges</h1>
 
@@ -27,3 +30,4 @@
 | 1             | JS intro, BASH Intro, GitHub, SSH |  |
 | 2             | Basc JS skills, workig with values| [Lab 2](./labs/week-02/challenges)
 | 3             | Conditional Statements            | [Lab 3](./labs/week-03/challenges)
+| 4             | Iteratives (or making stuff loop) | [Lab 4](./labs/week-04/exercises)
