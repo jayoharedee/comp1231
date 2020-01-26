@@ -22,9 +22,9 @@ With special syntax (like `if, ||, &&, var, let, const` ) we are able to loop ov
 
 like I said, it's pseudo code but imagine having a structure similar to that. With code, you could compelete each one of those items **iteratively**. Check the order in which the actions would be *iterated* over. I've commendted each line in the array. Oh yeah, in JavaScript to write an array object its done using these characters `[]`.
 
-Many things can happen with `[]` like creating lists as we see above. Or causing an effect or change in our application or code.
+Many things can happen when we're using the `[]` like creating lists as we see above. Or causing an effect or change in our application code. The ease of being able to have a stack of actions run at once, is quite nice. 
 
-One data type that we trade lightly on was array. We are going to look at it from a very hign level. 
+One value that we tread lightly on was array. We are going to look at it from a very hign level. 
 
 Here is what you are going to need to know about array:
   * It can be assigned to a variable just like a string
@@ -33,7 +33,7 @@ Here is what you are going to need to know about array:
   * Arrays need to have a beginning and an end
   * If arrays don't have a starting point and and ending point, we create an 'infinite loop'
 
-So, in week 4 wee talk about loops but it's not really possible to talk about loops without arrays, since we LOOPING over ARRAYS. worst case scenario, we just have stronger knowledge going into next week.
+So, in week 4 we talk about loops but it's not really possible to talk about loops without arrays, since we are LOOPING over ARRAYS. worst case scenario, we just have stronger knowledge going into next week.
 
 Let's take apart some JavaScript below
 
