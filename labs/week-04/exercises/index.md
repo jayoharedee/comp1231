@@ -1,74 +1,61 @@
 
 
-# Week 03 - Working with Conditional Statements
+# Week 04 - Working with Conditional Statements
 
-When we need to make decisions with code, we rely on something known as conditional statements. Conditional statements are nothing more than using special syntax to help is make a decision. Let's take a look at an example together using an if statement.
-
+## exercise 1
+**All evaluated if blocks should print a console.log**
 ```js
-// assign a variable to a boolean value
-const weAreInSchool = true
+// Variables
+ let tv = '32 LCD'
+ let price = 1000
+ let value = true
 
-if (weAreInSchool) {
-  // this gets executed because the variable in the if block has a value of true
-  console.log('when does it end?')
-}
-```
+ // Exercise 1 - run this if/else
+ if (tv) {
+   console.log(
+     `You purchased a ${tv} for ${price} and
+    there does to be some ${value} value so far.`
+   )
+ } else {
+   console.log(`Strings are not conidered to be true in JS`)
+ }
 
-Since the value assigned to `weAreInSchool` is a boolean value which is set to true, our conditional statement (lines 9-11) will evaluate to true. The opposite will happen if we had a value that was set to false.
+// Exercise 2 - invert if/else
+if (!tv) {
+   console.log(
+     `You purchased a ${tv} for ${price} and
+    there does to be some ${value} value so far.`
+   )
+   price = 0
+ } else if (price < 1000) {
+   console.log(`You have $${price}.00 to spend. No TV for you!`)
+ }
 
-```js
-const weAreNotInSchool = false
+if (!tv) {
+   console.log(
+     `You purchased a ${tv} for ${price} and
+    there does to be some ${value} value so far.`
+   )
+   price = 0
+ } else if (price === 1000) {
+   console.log(`You have $${price}.00 to spend. No TV for you!`)
+ } else {
+    console.log(`No Moneys`)
+ }
 
-if (weAreNotInSchool) {
-  // this will not get executed as the condition will not evaluate due to the variables value being set to false
-  console.log('When does it start?')
-}
-```
+// Exersice 3 - Comparing dates using Date
+let date = new Date(1324339200000)
+date.toString("MMM dd")
 
-Using conditionals we also have the ability to chain decisions together. This is done with an if/else syntax. Please see below for an example of this.
+let currentMilliSecond = new Date().getSeconds()
+let futureMilliSecond = new Date().getSeconds()
+let capturedMillisecond
 
-```js
-const weAreNotInSchool = false
-
-if (weAreNotInSchool) {
-  // this will not get executed as the condition will not evaluate due to the variables value being set to false
-  console.log('When does it start?')
+if (currentMilliSecond < futureMilliSecond) {
+  capturedMillisecond = new Date().getSeconds()
+  console.log(`The captured second is ${capturedMillisecond}`)
 } else {
-  // this block will be executed as the previous one will fail
-  console.log('We are still in school')
+  capturedMillisecond = new Date().getSeconds()
+  console.log(`The captured second is ${capturedMillisecond}`)
 }
-```
-
-If we need more than an if/else combo, we can utilize another form of conditional logic called `else if`. Check below for an example of this.
-
-```js
-const weAreNotInSchool = false
-const itsLunchTime = true
-if (weAreNotInSchool) {
-  // this will not get executed as the condition will not evaluate due to the variables value being set to false
-  console.log('When does it start?')
-} else if (itsLunchtime) {
-  // this block will be executed as the previous one will fail due to the value being set to false
-  // because itsLunchTime is set to true this code block will evaluate
-  console.log('Lunch is starting soon')
-}
-```
-
-If you're using an if/else if statement, you can still end things with an else should none of the conditions evaluate to true. Let's see an example so we know what it looks like.
-
-```js
-const weAreNotInSchool = false
-const itsLunchTime = false
-if (weAreNotInSchool) {
-  // this will not get executed as the condition will not evaluate due to the variables value being set to false
-  console.log('When does it start?')
-} else if (itsLunchtime) {
-  // this block will be executed as the previous one will fail due to the value being set to false
-  // because itsLunchTime is set to true this code block will evaluate
-  console.log('Lunch is starting soon')
-} else {
-  // the final block is executed as the two previous variables evaluated to false
-  console.log('This is all that\'s left')
-}
-
 ```

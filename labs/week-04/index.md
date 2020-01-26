@@ -1,5 +1,11 @@
 # Week 04 - Iterations (Make actions loop)
 
+[BACK](../../)
+
+**If you're looking for the [exercise](./exercises/index.md), that link will take your there. If you're after the [challenege](./challenges/index.md), you will find it there**
+
+## Iterating
+
 Have you ever had an list of actions that you wish you could handle every action at once? Or more properly advocated, have you ever wished you had a list of actions you could finish without having to worry about it? This is where things start to get interesting after we talk about variables and making decisions with code.
 
 With special syntax (like `if, ||, &&, var, let, const` ) we are able to loop over a list of actions. So if I could lean on some pseudo code here. It would concetually look something like thi:
@@ -51,3 +57,28 @@ for (let index = 0; index < groceryList.length; index++) {
   console.log(element)
 }
 ```
+
+Note the variable in the `for` block called index. Index is a number that represents each iteration of a loop. So because we have six items in our grocery bag, the first index would 0, then it would be 1 and then 2... all the way up to six. An index represents the number of times the loop has... looped.
+
+Next to the `let index = 0;` part of the four block, we see a condition. The condition is saying; has the number of times we've looped (AKA what number is index at) greater than the items in our grocer list. `index < groceryList.length` is the condition we were just speaking of. Remember index is the loop number and grocerList, is our array.
+
+What does .length do? Well, without going down the rabits whole right now, .length provides us with the number of items in an array. So if we had an array called `array` we could go `array.length` and the number of items would be returned to us.
+
+If you notice in the for block, there is our very last operation. `for (let i = 0; i < array.length; i++). The infamous ++. In computer science ++ is known as an incrementer. It increments a value, so if we look at a stack of for loops and how the `i++` increments the value, lets take a closer look.
+
+```js
+for (let i = 0; i < array.length; i++) // increment one
+for (let i = 1; i < array.length; i++) // i = 1 because of the incrementer at the end i++
+for (let i = 2; i < array.length; i++) // 1 incremeneted by 1 is 2
+for (let i = 3; i < array.length; i++) // 2++ = 3
+for (let i = 4; i < array.length; i++) // 4++ = 5
+for (let i = 5; i < array.length; i++) // 5++ = 6
+for (let i = 6; i < array.length; i++) // 5++ = 6
+```
+
+# While
+We should know have a general tha whenever you see () in JavaScript syntax, it means we can feed values in it.
+
+Just as we were able to increment a list with a for loop, we can do the same thing using a different syntax. `for` is the most common but `while` and `do..while` is also used. Let's get into them since we built a foundationg with `if` statements, seen conditions applied to `for` loops which repeated actions for us. 
+
+# Do While
