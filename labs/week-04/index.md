@@ -2,6 +2,8 @@
 
 **If you're looking for the [exercise](./exercises/index.md), that link will take your there. If you're after the [challenege](./challenges/index.md), you will find it there**
 
+## Iterating
+
 Have you ever had an list of actions that you wish you could handle every action at once? Or more properly advocated, have you ever wished you had a list of actions you could finish without having to worry about it? This is where things start to get interesting after we talk about variables and making decisions with code.
 
 With special syntax (like `if, ||, &&, var, let, const` ) we are able to loop over a list of actions. So if I could lean on some pseudo code here. It would concetually look something like thi:
@@ -60,4 +62,18 @@ Next to the `let index = 0;` part of the four block, we see a condition. The con
 
 What does .length do? Well, without going down the rabits whole right now, .length provides us with the number of items in an array. So if we had an array called `array` we could go `array.length` and the number of items would be returned to us.
 
-In the above example, it's six. There's a little more to discuss here but we'll save it for arrays next week.
+If you notice in the for block, there is our very last operation. `for (let i = 0; i < array.length; i++). The infamous ++. In computer science ++ is known as an incrementer. It increments a value, so if we look at a stack of for loops and how the `i++` increments the value, lets take a closer look.
+
+```js
+for (let i = 0; i < array.length; i++) // increment one
+for (let i = 1; i < array.length; i++) // i = 1 because of the incrementer at the end i++
+for (let i = 2; i < array.length; i++) // 1 incremeneted by 1 is 2
+for (let i = 3; i < array.length; i++) // 2++ = 3
+for (let i = 4; i < array.length; i++) // 4++ = 5
+for (let i = 5; i < array.length; i++) // 5++ = 6
+for (let i = 6; i < array.length; i++) // 5++ = 6
+```
+
+# While
+
+# Do While
