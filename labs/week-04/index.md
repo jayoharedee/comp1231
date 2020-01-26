@@ -75,5 +75,8 @@ for (let i = 6; i < array.length; i++) // 5++ = 6
 ```
 
 # While
+We should know have a general tha whenever you see () in JavaScript syntax, it means we can feed values in it.
+
+Just as we were able to increment a list with a for loop, we can do the same thing using a different syntax. `for` is the most common but `while` and `do..while` is also used. Let's get into them since we built a foundationg with `if` statements, seen conditions applied to `for` loops which repeated actions for us. 
 
 # Do While
