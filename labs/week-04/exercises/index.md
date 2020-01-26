@@ -43,6 +43,7 @@ if (!tv) {
     console.log(`No Moneys`)
  }
 
+// Exersice 3 - Comparing dates using Date
 let date = new Date(1324339200000)
 date.toString("MMM dd")
 
@@ -58,11 +59,3 @@ if (currentMilliSecond < futureMilliSecond) {
   console.log(`The captured second is ${capturedMillisecond}`)
 }
 ```
-
-
-
-## exercise 4 
-1. Use the Math library to generate a random number
-  * let classTime = Math.floor(Math.random() * 100)
-2. Create an if/else statement between 0 - 99 to catch to number
-3. console log out the result in each if block (the space between the braces on the if)

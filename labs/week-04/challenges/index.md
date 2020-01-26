@@ -13,11 +13,4 @@
 Rinse and repeat. Copy the code you've completed above and have all conditions evaluate to false
 
 ## exercise 3
-Copy the code you've completed above and have all conditions evaluate to include an else statement. 
-
-
-## exercise 4 
-1. Use the Math library to generate a random number
-  * let classTime = Math.floor(Math.random() * 100)
-2. Create an if/else statement between 0 - 99 to catch to number
-3. console log out the result in each if block (the space between the braces on the if)
+Write code that captures the date just as in exercise 3. Compare the dates and capture the current time. When you're done, it should look just as I did. Or better. We will be talking about Dates and objects shortly so here is a brief introdcution. Don't worry about the values. just look at how the syntax for the logic is used. 
