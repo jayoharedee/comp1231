@@ -58,4 +58,4 @@ Next to the `let index = 0;` part of the four block, we see a condition. The con
 
 What does .length do? Well, without going down the rabits whole right now, .length provides us with the number of items in an array. So if we had an array called `array` we could go `array.length` and the number of items would be returned to us.
 
-In the above example, it's six.
+In the above example, it's six. There's a little more to discuss here but we'll save it for arrays next week.
