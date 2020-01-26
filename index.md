@@ -21,7 +21,7 @@
 | 1             | JS intro, BASH Intro, GitHub, SSH |  
 | 2             | Basc JS skills, workig with values| [Lab 2](./labs/week-02/exercises)
 | 3             | Conditional Statements            | [Lab 3](./labs/week-03/exercises)
-| 4             | Iteratives (or making stuff loop) | [Lab 4](./labs/week-04/exercises)
+| 4             | Iteratives (or making stuff loop) | [Lab 4](./labs/week-04/)
 
  <h1>Challenges</h1>
 
@@ -30,4 +30,4 @@
 | 1             | JS intro, BASH Intro, GitHub, SSH |  |
 | 2             | Basc JS skills, workig with values| [Lab 2](./labs/week-02/challenges)
 | 3             | Conditional Statements            | [Lab 3](./labs/week-03/challenges)
-| 4             | Iteratives (or making stuff loop) | [Lab 4](./labs/week-04/exercises)
+| 4             | Iteratives (or making stuff loop) | [Lab 4](./labs/week-04/)
