@@ -51,3 +51,11 @@ for (let index = 0; index < groceryList.length; index++) {
   console.log(element)
 }
 ```
+
+Note the variable in the `for` block called index. Index is a number that represents each iteration of a loop. So because we have six items in our grocery bag, the first index would 0, then it would be 1 and then 2... all the way up to six. An index represents the number of times the loop has... looped.
+
+Next to the `let index = 0;` part of the four block, we see a condition. The condition is saying; has the number of times we've looped (AKA what number is index at) greater than the items in our grocer list. `index < groceryList.length` is the condition we were just speaking of. Remember index is the loop number and grocerList, is our array.
+
+What does .length do? Well, without going down the rabits whole right now, .length provides us with the number of items in an array. So if we had an array called `array` we could go `array.length` and the number of items would be returned to us.
+
+In the above example, it's six.
