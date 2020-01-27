@@ -139,11 +139,11 @@ while (n < 3) {
 }
 ```
 
-Whiles, I haven't seen to many of them in the wild, a `for, forEach, map of filter` is more commonly used but you will still be tested on whiles and they're important to understand. WIth the knowledge gained, you can develop a better understanding of looping which makes your life easier.
+Whiles, I haven't seen too many of them in the wild, a `for, forEach, map` or  `filter` is more commonly used but you will still be tested on whiles and they're important to understand. WIth the knowledge gained, you can develop a better understanding of looping which makes your life easier.
 
 # Do While
 
-`do..while`'s are kind of like a while statement, you still pass a condition to a keyword called `while` but you explicitly tell that machine what to *do* with another special keyword in the JavaScript language. This is known as `do` and can be used in concjunction with while so the `do` tasks have an end and a beginning to know when to stop.
+`do...while`'s are kind of like a while statement, you still pass a condition to a keyword called `while` but you explicitly tell that machine what to *do* with another special keyword in the JavaScript language. This is known as `do` and can be used in conjunction with while so the `do` tasks have an end and a beginning to know when to stop. Thus, preventing infinite loops.
 
 ```js
 // basic do while
