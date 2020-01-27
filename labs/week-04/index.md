@@ -41,6 +41,7 @@ Table of Loop Contents to bounce around easier
 [For Loops](#for-loops)
 [While Loops](#while-loops)
 [Do While](#do-whilen)
+
 # For Loops
 
 ```js
