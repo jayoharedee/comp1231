@@ -81,4 +81,59 @@ We should know have a general tha whenever you see () in JavaScript syntax, it m
 
 Just as we were able to increment a list with a for loop, we can do the same thing using a different syntax. `for` is the most common but `while` and `do..while` is also used. Let's get into them since we built a foundationg with `if` statements, seen conditions applied to `for` loops which repeated actions for us. 
 
+
+## While Loops
+We have conditions. We've seen them in `if` statements, console logs `console.log(typeof phone === 'string')`, we'eve seen conditions in `for` loops as well (index < array.length).
+
+No we'll see conditions in while loops. Cause as long as a loop has a condition, it will continue iterating (looping). Let's have a peak at how we can use the incrementer value we just played with in our for floop and see, using a while loop if we can increment a value.
+
+As long as the condition or test in between the `(numberToGrow)` evaluates to true, whatever is inside the while block will evaluate. Thus letting us get an output of 6.
+```js
+let numberToGrow = 0
+
+while (numberToGrow < 6) {
+  numberToGrow++
+}
+
+console.log(numberToGrow);
+// expected output: 6
+```
+
+Here is one more example where the variable assignment must look funny. **Ask me questions if you dont understand, I do not bite.**
+
+```js
+let numberToGrow = 0
+let numberToAdd = 0;
+
+while (n < 3) {
+  numberToGrow++;
+  numberToAdd += numberToGrow;
+}
+```
+
+To provide some details, each iteration of the while loop, we have `numberToGrow` and `numberToAdd` take on the followinf values.
+
+* After the first pass: numberToGrow = 1 and numberToAdd = 1
+* After the second pass: numberToGrow = 2 numberToAdd = 3
+* after the third pass: numberToGrow = 3 and numberToAdd = 6
+
+If you don't belive me, through in some console logs. It's what I and many other developers use to watch values change and ensure the change takes place in the right order.
+
+```js
+let numberToGrow = 0
+let numberToAdd = 0;
+
+while (n < 3) {
+  numberToGrow++;
+  numberToAdd += numberToGrow;
+
+  console.log(`numberToGrow is currently ${numberToGrow}`)
+  console.log(`numberToAdd is currently ${numberToAdd}`)
+}
+```
+
+Whiles, I haven't seen to many of them in the wild, a `for, forEach, map of filter` is more commonly used but you will still be tested on whiles and they're important to understand. WIth the knowledge gained, you can develop a better understanding of looping which makes your life easier.
+
 # Do While
+
+`do..while`'s are kind of like a while statement, you still pass a condition to a keyword called `while` but you explicitly tell that machine what to *do* with
