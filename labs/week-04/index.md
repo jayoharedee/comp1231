@@ -38,9 +38,11 @@ So, in week 4 we talk about loops but it's not really possible to talk about loo
 Let's take apart some JavaScript below.
 
 Table of Loop Contents to bounce around easier
-[For Loops](#for-loops)
-[While Loops](#while-loops)
-[Do While](#do-while)
+**[For Loops](#for-loops)**
+
+**[While Loops](#while-loops)**
+
+**[Do While](#do-while)**
 
 # For Loops
 
