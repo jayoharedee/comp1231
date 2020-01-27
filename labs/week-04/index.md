@@ -143,4 +143,38 @@ Whiles, I haven't seen to many of them in the wild, a `for, forEach, map of filt
 
 # Do While
 
-`do..while`'s are kind of like a while statement, you still pass a condition to a keyword called `while` but you explicitly tell that machine what to *do* with
+`do..while`'s are kind of like a while statement, you still pass a condition to a keyword called `while` but you explicitly tell that machine what to *do* with another special keyword in the JavaScript language. This is known as `do` and can be used in concjunction with while so the `do` tasks have an end and a beginning to know when to stop.
+
+```js
+// basic do while
+let result = ''
+let i = 0
+
+do {
+  // this gets executed so long that while remains true.
+  // notice we are incrementing i by adding but we could
+  // use a short hand evaluator if we were lazy
+  index = index + 1
+  // or index++, they both do the same. you decide your style
+
+  result = result + index
+} while (i < 5)
+
+console.log(result)
+// expected result: "12345"
+```
+
+Here is a more complex example as we are using a boolean opperand in our condition.
+```js
+var result = ''
+var index = 0
+do {
+   index += 1
+   result += index + ' '
+} while (index > 0 && index < 5)
+
+console.log(`The value of ressult is ${result}`)
+// 1 2 3 4 5
+```
+
+Loops work great when we want to fill arrays with data. We can make some pretty interesting stuff happen like web scraping data we need and adding it to a list.
