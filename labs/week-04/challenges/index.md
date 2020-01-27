@@ -13,7 +13,7 @@
 Rinse and repeat. Copy the code you've completed above and have all conditions evaluate to false
 
 ## exercise 3
-Write code that captures the date just as in exercise 3. Compare the dates and capture the current time. When you're done, it should look just as I did. Or better. We will be talking about Dates and objects shortly so here is a brief introdcution. Don't worry about the values. just look at how the syntax for the logic is used. 
+Write code that captures the date as in [exercise 3](./../../week-04/index.md). Compare the dates and capture the current time. When you're done, it should look just as I wrote in the exercise. If you copy and paste, I will find embedded and hidden characters so please don't cheat me. Write it out just as I did or better. We will be talking about Dates and objects shortly so here is a brief introdcution. Don't worry about where the values come from. just look at how the syntax for the logic is used. 
 
 
 # The Lab Test
@@ -25,7 +25,7 @@ Write code that captures the date just as in exercise 3. Compare the dates and c
 3. Once inside the evaluated if statement, you must assign any value you like to a value predefined called  `toBeDeclared`.
 
 ```js
-const email = 'someone@somewhere.com'
-let randomNumber = Math.floor(Math.random() * 100)
-let toBeDeclared
+const email = 'someone@somewhere.com' // this is the variable that has been assigned for you to use
+let randomNumber = Math.floor(Math.random() * 100) // this ariable returns a random number for step 2
+let toBeDeclared // this is yet to have a value assigned. I want you to assign any value to the variable
 ```
