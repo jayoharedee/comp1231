@@ -1,6 +1,6 @@
 # COMP1231
 
-If you're looking for the course website, it can be found (here)[https://jayoharedee.github.io/comp1231]
+If you're looking for the course website, it can be found [here](https://jayoharedee.github.io/comp1231)
 
 All Lab source can be found below.
 
