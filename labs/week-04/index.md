@@ -2,7 +2,7 @@
 
 ### [BACK](../../)
 
-**If you're looking for the [exercise](./exercises/index.md), that link will take your there. If you're after the [challenege](./challenges/index.md), you will find it there**
+**:squirrel: If you're looking for the [exercise](./exercises/index.md), that link will take your there. If you're after the [challenge](./challenges/index.md), you will find it there**
 
 ## Iterating
 
