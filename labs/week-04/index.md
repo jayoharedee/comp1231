@@ -35,7 +35,13 @@ Here is what you are going to need to know about array:
 
 So, in week 4 we talk about loops but it's not really possible to talk about loops without arrays, since we are LOOPING over ARRAYS. worst case scenario, we just have stronger knowledge going into next week.
 
-Let's take apart some JavaScript below
+Let's take apart some JavaScript below.
+
+Table of Loop Contents to bounce around easier
+[For Loops](#for-loops)
+[While Loops](#while-loops)
+[Do While](#do-whilen)
+# For Loops
 
 ```js
 // the is an array. notice the value, it is assign to reserved characters []
