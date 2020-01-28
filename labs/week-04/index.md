@@ -2,7 +2,13 @@
 
 ### [BACK](../../)
 
-**:squirrel: If you're looking for the [exercise](./exercises/index.md), that link will take your there. If you're after the [challenge](./challenges/index.md), you will find it there**
+**:squirrel: If you're looking for the [exercise](./exercises/index.md), click the link. If you're after the clicking [this](./challenges/index.md), will get you there**
+
+:squirrel:
+For anyone looking for what we completed in our lab class today, please reference [this page](https://github.com/jayoharedee/comp1231/blob/master/lab-work/week-04/index.js) for syntax used and conventions applied.
+:squirrel:
+
+> Any questions, please let me know.
 
 ## Iterating
 
