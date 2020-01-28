@@ -26,28 +26,6 @@ switch(CIDR) {
     break
 }
 
-// TIP: Rewrite this switch but play with it by removing the breaks and see what results you are left with.
-// Pay close attention to which cases have breaks and which ones don't. Sometimes having no breaks makes sense.
-
-const PRODUCTION_SERVER = '192.168.24.3:3000'
-// Take note, the cases without breaks in their statement will still run when we don't want them too.
-// will only want something to happen for the production socket
-switch (PRODUCTION_SERVER) {
-  case '192.168.24.3:3000':
-    console.log('Do production tasks here.')
-  case '192.168.0.0':
-    console.log('Not the production server.')
-  case '192.168.0.1':
-    console.log('Also not the production server.')
-    console.log('log or do some network admin stuff here')
-    break
-  case '192.168.0.3':
-    console.log('Not the production server yet again.')
-    console.log('log or do some network admin stuff here')
-    break
-  default:
-    break
-}
 console.log(`The network address for ${CIDR} is ${ipAddress}`)
 
 /**
@@ -81,7 +59,12 @@ let index = 0
 let groceries = groceryItems.length
 while (groceries > index) {
   // increment our index so we don't go till infinite
-  index++
+  if (finished) {
+    break
+  } else {
+    index++
+  }
+
   console.log(`
     We've picked up some ${groceryItems[index]}
   `)
@@ -91,11 +74,16 @@ while (groceries > index) {
     console.log(`We've picked everything up, lets exit using our break`)
     // reassign the variable as we are finished now
     finished = true
-    // escape the loop
-    break 
   }
 }
-// remember, groceryitems have a length property. Don't worry about properties now, just know if you 
-// ever want to know the length of an array, the syntax is: `yourArray.length` and it will return a number
-console.log(`There are five elements ${groceryItems[groceryItems.length - 1]}`) 
+// console.log(groceryItems.length - 1)
+console.log(`There are five elements ${groceryItems[groceries - 1]}`) 
 
+// Do...while
+let incrementer = 0 
+do {
+  // ++ means value of variable plus one
+  incrementer++
+} while (incrementer < 1000)
+
+console.log(`We incremented with a do...while fairly easily. We looped up to ${incrementer}`)
