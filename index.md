@@ -13,8 +13,6 @@
 
  <h1>Exercises</h1>
 
- **Right now Exercise 4 is a WIP (work in progress so I am updating it through out the date.) As long as I figuure Blacboard out, I will send a mass notification when it's compelte. If not you can reference these pages tomorrow in class.**
-
 
  | Week          | Topics                            | Link                    |
 | ------------- |:---------------------------------:|:-----------------------:|
