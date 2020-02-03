@@ -1,4 +1,0 @@
-• The code must be in an external JavaScript file called REPLACE_WITH_STUDENT_ID.js 
-• The javaScript code must be uploaded to gblearn.com in a folder path "comp1231/lab/tests/test1". You also have to use the similarity test to submit at my.gblearn.com 
-  ◦ Students must select an assigned version when uploading their code to my.gblearn.com 
-        ▪ Jordan's Versions E, F, G, H

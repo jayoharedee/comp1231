@@ -3,6 +3,17 @@
 // out to the console
 console.log("it works! BUT MAKE SURE YOU RENAME THE FILE HERE AND UPDATE THE HTML SCRIPT TAG");
 
-let time = new Date().getSeconds()
 
-// right a test that has flags within nested ifs for users to collect and change
+// DO NOT CHANGE
+let randomBoolean = Math.random() >= 0.5
+// LEAVE ALONE
+
+if (randomBoolean) {
+  
+} else {
+  // DO NOT CHANGE
+  let randomNumber = Math.floor(Math.random() * 100)
+  // Leave alone
+  
+  // if (randomNumber) {}
+}
