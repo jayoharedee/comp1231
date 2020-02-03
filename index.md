@@ -29,3 +29,4 @@
 | 2             | Basc JS skills, workig with values| [Lab 2](./labs/week-02/challenges)
 | 3             | Conditional Statements            | [Lab 3](./labs/week-03/challenges)
 | 4             | Iteratives (or making stuff loop) | [Lab 4](./labs/week-04/)
+| 5             | Lab Test | [Lab 5](./labs/week-05/test)
