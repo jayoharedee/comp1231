@@ -9,4 +9,5 @@ All Lab source can be found below.
 | 1             | JS intro, BASH Intro, GitHub, SSH | [Lab 1](./labs/week-01) |
 | 2             | Basc JS skills, workig with values| [Lab 2](./labs/week-02) |
 | 3             | Conditional statements            | [Lab 3](./labs/week-03) |
-| 4             | Iteratives (making stuff loop)    | [Lab 4](./labs/week-04/)
+| 4             | Iteratives (making stuff loop)    | [Lab 4](./labs/week-04/)|
+| 5             | Lab Test                          | [Lab 5](./labs/week-05/test) |
