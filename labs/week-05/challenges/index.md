@@ -29,4 +29,4 @@ let seconds = new Date().getSeconds()
 //current second
 ```
 
-Try Running in your web dev console and see the outcome.
+Try Running the variable declarements in your web dev console and see the outcome.
