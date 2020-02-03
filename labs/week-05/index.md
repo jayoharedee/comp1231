@@ -2,7 +2,6 @@
 
 ### [BACK](../../)
 
-**:squirrel: If you're looking for the [exercise](./exercises/index.md), that link will take your there. If you're after the [challenge](./challenges/index.md), you will find it there**
 
 ## Iterating
 We'll be talking about arrays this week but we also have a test to take care of.
