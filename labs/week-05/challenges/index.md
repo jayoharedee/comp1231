@@ -2,13 +2,11 @@
 
 # Week 05 - Test
 
-# Week 04 - Iterations (Make actions loop)
 
 ### [BACK](../../)
 
-**:squirrel: If you're looking for the [exercise](./exercises/index.md), that link will take your there. If you're after the [challenge](./challenges/index.md), you will find it there**
 
-## Iterating
+## Lab Test Stuff
 We'll be talking about arrays this week but we also have a test to take care of.
 
 Remember when we were looking at how the built-in Math Library can be used to generate random numbers?
