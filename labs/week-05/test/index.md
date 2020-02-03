@@ -16,3 +16,30 @@ Part Two
 2. Create an else statement on the if responsible for creating a timestamp
 3. In the else, create an if...else statement like we have previously in class
 4. Capture the randomly generated number and console log out the value
+
+Here is some boiler plate to help get you off the gound
+
+```js
+// DO NOT TOUCH
+let randomBoolean = Math.random() >= 0.5
+// LEAVE ALONE
+
+if (randomBoolean) {
+  // an example of how we can get the hour in JS
+  const hour = new Date().getHours()
+  // get the minutes
+  // and the seconds as well
+
+  // console log a timestamp by contactinating the 
+  // time strings. You can use string literals ``, single quotes
+  // '' or double quotes ""
+} else {
+  // DO NOT TOUCH
+  let randomNumber = Math.floor(Math.random() * 100)
+  // LEAVE LONE
+
+  // in previous exercises we caught a random number 
+  // using if...else statements please do the same here
+}
+
+```
