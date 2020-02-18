@@ -20,7 +20,7 @@
 | 2             | Basc JS skills, workig with values| [Lab 2](./labs/week-02/exercises)
 | 3             | Conditional Statements            | [Lab 3](./labs/week-03/exercises)
 | 4             | Iteratives (or making stuff loop) | [Lab 4](./labs/week-04/)
-| 6 & 7         | Functions                         | [Lab 4](./labs/functions) 
+| 6 & 7         | Functions                         | [Lab 6 & 7](./labs/functions) 
 
  <h1>Challenges</h1>
 
@@ -31,3 +31,4 @@
 | 3             | Conditional Statements            | [Lab 3](./labs/week-03/challenges)
 | 4             | Iteratives (or making stuff loop) | [Lab 4](./labs/week-04/)
 | 5             | Lab Test | [Lab 5](./labs/week-05/test)
+| 6 & 7         | Lab Test | [Lab 5](./labs/functions/challenges)
