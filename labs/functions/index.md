@@ -125,3 +125,154 @@ alert( userName ); // John, unchanged, the function did not access the outer var
 >Global variables are visible from any function (unless shadowed by locals).
 
 >It’s a good practice to minimize the use of global variables. Modern code has few or no globals. Most variables reside in their functions. Sometimes though, they can be useful to store project-level data.
+
+## Parameters
+
+We can pass arbitrary data to functions using parameters (also called function arguments) .
+
+In the example below, the function has two parameters: from and text.
+```js
+function showMessage(from, text) { // arguments: from, text
+  alert(from + ': ' + text);
+}
+
+showMessage('Ann', 'Hello!'); // Ann: Hello! (*)
+showMessage('Ann', "What's up?"); // Ann: What's up? (**)
+```
+
+When the function is called in lines (*) and (**), the given values are copied to local variables from and text. Then the function uses them.
+
+Here’s one more example: we have a variable from and pass it to the function. Please note: the function changes from, but the change is not seen outside, because a function always gets a copy of the value:
+
+```js
+function showMessage(from, text) {
+
+  from = '*' + from + '*'; // make "from" look nicer
+
+  alert( from + ': ' + text );
+}
+
+let from = "Ann";
+
+showMessage(from, "Hello"); // *Ann*: Hello
+
+// the value of "from" is the same, the function modified a local copy
+alert( from ); // Ann
+```
+
+## Default Values
+
+If a parameter is not provided, then its value becomes undefined.
+
+For instance, the aforementioned function showMessage(from, text) can be called with a single argument:
+
+```js
+showMessage("Ann");
+```
+
+That’s not an error. Such a call would output "Ann: undefined". There’s no text, so it’s assumed that text === undefined.
+
+If we want to use a “default” text in this case, then we can specify it after =:
+
+```js
+function showMessage(from, text = "no text given") {
+  alert( from + ": " + text );
+}
+
+showMessage("Ann"); // Ann: no text given
+```
+
+Now if the text parameter is not passed, it will get the value "no text given"
+
+Here "no text given" is a string, but it can be a more complex expression, which is only evaluated and assigned if the parameter is missing. So, this is also possible:
+
+```js
+function showMessage(from, text = anotherFunction()) {
+  // anotherFunction() only executed if no text given
+  // its result becomes the value of text
+}
+```
+
+
+### Evaluation of default parameters
+
+> In JavaScript, a default parameter is evaluated every time the function is called without the respective parameter.
+
+> In the example above, anotherFunction() is called every time showMessage() is called without the text parameter.
+
+### Default parameters old-style
+
+Old editions of JavaScript did not support default parameters. So there are alternative ways to support them, that you can find mostly in the old scripts.
+
+For instance, an explicit check for being undefined:
+```js
+function showMessage(from, text) {
+  if (text === undefined) {
+    text = 'no text given';
+  }
+
+  alert( from + ": " + text );
+```
+
+…Or the || operator:
+
+```js
+function showMessage(from, text) {
+  // if text is falsy then text gets the "default" value
+  text = text || 'no text given';
+  ...
+}
+```
+
+## Returning a value
+
+A function can return a value back into the calling code as the result.
+
+The simplest example would be a function that sums two values:
+
+```js
+function sum(a, b) {
+  return a + b;
+}
+
+let result = sum(1, 2);
+alert( result ); // 3
+```
+
+The directive return can be in any place of the function. When the execution reaches it, the function stops, and the value is returned to the calling code (assigned to result above).
+
+There may be many occurrences of return in a single function. For instance:
+```js
+function checkAge(age) {
+  if (age >= 18) {
+    return true;
+  } else {
+    return confirm('Do you have permission from your parents?');
+  }
+}
+
+let age = prompt('How old are you?', 18);
+
+if ( checkAge(age) ) {
+  alert( 'Access granted' );
+} else {
+  alert( 'Access denied' );
+}
+```
+
+It is possible to use return without a value. That causes the function to exit immediately.
+
+For example:
+
+```js
+function showMovie(age) {
+  if ( !checkAge(age) ) {
+    return;
+  }
+
+  alert( "Showing you the movie" ); // (*)
+  // ...
+}
+```
+
+In the code above, if checkAge(age) returns false, then showMovie won’t proceed to the alert.
