@@ -1,9 +1,7 @@
-### [BACK](../../../)
-
-# Week 05 - Test
+# Week 06 - 7 - Functions
 
 
-### [BACK](../../)
+### [BACK](../)
 
 
 ## Challenges 
