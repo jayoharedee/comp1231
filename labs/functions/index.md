@@ -281,6 +281,7 @@ In the code above, if checkAge(age) returns false, then showMovie won’t procee
 
 > If a function does not `return` a value, it is the same as if it returns undefined:
 
+
 ```js
 function doNothing() { /* empty */ }
 
@@ -288,6 +289,7 @@ alert( doNothing() === undefined ); // true
 ```
 
 > An empty `return` is also the same as `return undefined`:
+
 ```js
 function doNothing() {
   return;
