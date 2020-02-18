@@ -89,4 +89,4 @@ Create a web-page that prompts for x and n, and then shows the result of pow(x,n
 
 P.S. In this task the function should support only natural values of n: integers up from 1.
 
-[If you'd like to see the solutions, hope over to the solutions directory.](../solutions/index.md)
+[If you'd like to see the solutions, hop over to the solutions directory.](./labs/functions/solutions/index.md)
