@@ -297,11 +297,14 @@ alert( doNothing() === undefined ); // true
 ```
 
 > Never add a newline between return and the value
+
 For a long expression in `return`, it might be tempting to put it on a separate line, like this:
 ```js
 return
  (some + long + expression + or + whatever * f(a) + f(b))
+```
 
+```js
  // That doesn’t work, because JavaScript assumes a semicolon after return. That’ll work the same as:
  return;
  (some + long + expression + or + whatever * f(a) + f(b))
