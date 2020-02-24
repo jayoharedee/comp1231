@@ -181,7 +181,7 @@ if (!shouldChangeBackground) {
  *
  * If you're creating a variable and sometimes you're not sure what type should be
  * assigned to a variable, some developers will assign `null`. If `null` is a value
- * passed to an if statement, it would be read as false. However, in actuality it is
+ * passed to an if statjavascript babelement, it would be read as false. However, in actuality it is
  * not false, it's null.
  *
  * That might not make a lot of sense but just know on a high level if you see `null`
