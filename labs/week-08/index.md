@@ -3,12 +3,12 @@
 This document will be covering each week we've completed so far to help you refresh and challenge your JS knowledge. We will be looking at each week in it's section starting with week one. You can skip to particular subject matter if there are specific skills that you'd like to focus on.
 
 ### Table Of Contents
-  [Week One](#Week-One)
-  [Week Two](#Week-Two)
-  [Week Three](#Week-Three)
-  [Week Four](#Week-Four)
-  [Week Five](#Week-Five)
-  [Week Six And Seven](#Week-Six-And-Seven)
+  * [Week One](#Week-One)
+  * [Week Two](#Week-Two)
+  * [Week Three](#Week-Three)
+  * [Week Four](#Week-Four)
+  * [Week Five](#Week-Five)
+  * [Week Six And Seven](#Week-Six-And-Seven)
   
 # Week One
 
