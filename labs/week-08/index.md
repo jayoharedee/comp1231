@@ -2,6 +2,14 @@
 
 This document will be covering each week we've completed so far to help you refresh and challenge your JS knowledge. We will be looking at each week in it's section starting with week one. You can skip to particular subject matter if there are specific skills that you'd like to focus on.
 
+### Table Of Contents
+  [Week One](#Week-One)
+  [Week Two](#Week-Two)
+  [Week Three](#Week-Three)
+  [Week Four](#Week-Four)
+  [Week Five](#Week-Five)
+  [Week Six And Seven](#Week-Six-And-Seven)
+  
 # Week One
 
 In week one we spoke about the role JS plays in the overall architecture of web applications. There is a decent amount of introductory material that I'll be excluding and we'll focus on the syntactical skills we picked up in week one.
@@ -283,7 +291,7 @@ The following identifiers are reserved words—they are part of the syntax and c
 
 Also, don't create global variables. This means when you're creating a variable ensure you are using `let`, `const` or `var` before providing your variable with a name.
 
-# Week 3
+# Week Three
 
 ### Conditional Statements
 The if statement has a then clause and an optional else clause that are executed depending on a boolean condition:
