@@ -12,3 +12,4 @@ All Lab source can be found below.
 | 4             | Iteratives (making stuff loop)    | [Lab 4](./labs/week-04/)|
 | 5             | Lab Test                          | [Lab 5](./labs/week-05/test) |
 | 8             | Intersession challenges           | [Exercises](./labs/week-08/) |
+| 9             | Intersession challenges           | [Exercises](./labs/week-09/) |
