@@ -8,10 +8,10 @@ const profiles = ["Ali", "Bruce", "Carolyn", "Donna"]
 const profileSINs = [834685835, 837469365, 837486835, 837465835] 
 // 1D array contains some strings
 const ipAddress = [
-  '1.92.168.0.1',
-  '1.92.168.0.2',
-  '1.92.168.0.3',
-  '1.92.168.0.4',
+  '192.168.0.1',
+  '192.168.0.2',
+  '192.168.0.3',
+  '192.168.0.4',
 ]
 
 // multi-dimensional arrays are: arrays inside arrays
@@ -31,6 +31,7 @@ console.log(initialArray)
 // if we we're to apply this notation to our `initialArray` variable it would look like this
 const result = initialArray[0][2]  // output: "carolyn"
 const resultExample = initialArray[1][2] // output: 837486835
+// CHALLENGE: get Carolyn's IP
 
 console.info('*** ACCESSING STATE EXAMPLES ***');
 console.log(result, resultExample);
@@ -38,7 +39,7 @@ console.log(result, resultExample);
 // we could concatenate the output of these two variables together using string interpolation
 const carolyn = result
 carolynsIp = resultExample
-const carolynsIpString = `${carolyn}'s ip address is ${carolynsIp}`
+const carolynsIpString = `${carolyn}'s SIN is ${carolynsIp}`
 
 // more examples
 console.log('*** concatenating examples ***');
