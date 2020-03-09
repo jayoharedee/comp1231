@@ -21,7 +21,8 @@
 | 3             | Conditional Statements            | [Lab 3](./labs/week-03/exercises)
 | 4             | Iteratives (or making stuff loop) | [Lab 4](./labs/week-04/)
 | 6 & 7         | Functions                         | [Lab 6 & 7](./labs/functions) 
-| 10         | Working with objects            | [Lab 10](./labs/week-10/exercises)
+| 10            | Working with objects              | [Lab 10](./labs/week-10/exercises)
+
  <h1>Challenges</h1>
 
  | Week          | Topics                            | Link                    |
