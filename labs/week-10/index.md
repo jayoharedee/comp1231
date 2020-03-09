@@ -40,14 +40,6 @@ arr.forEach(element => console.log(element))
 
 An object is a collection of properties, methods, and keys that are assigned to values. Some objects come pre-rolled in the your browser like the `document` or `window` object.
 In this document we'll be taking a look at how objects are used, properties, functions and methods are created. 
-
-### Table Of Contents
-  * [Week One](#Week-One)
-  * [Week Two](#Week-Two)
-  * [Week Three](#Week-Three)
-  * [Week Four](#Week-Four)
-  * [Week Five](#Week-Five)
-  * [Week Six And Seven](#Week-Six-And-Seven)
   
 #### Objects overview
 
