@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 12</title>
+  <script>
+    function setCookie(name, value, options = {}) {
+
+        options = {
+          path: '/',
+          // add other defaults here if necessary
+          ...options
+        };
+
+        if (options.expires instanceof Date) {
+          options.expires = options.expires.toUTCString();
+        }
+
+        let updatedCookie = encodeURIComponent(name) + "=" + encodeURIComponent(value);
+
+        for (let optionKey in options) {
+          updatedCookie += "; " + optionKey;
+          let optionValue = options[optionKey];
+          if (optionValue !== true) {
+            updatedCookie += "=" + optionValue;
+          }
+
+          document.cookie = updatedCookie;
+        }
+      }
+
+      // Create some cookies for us to play with
+      setCookie('user', 'John', { secure: true, 'max-age': 3600 });
+      setCookie('points', 36, { secure: true, 'max-age': 3600 });
+      setCookie('weapons', 'none', { secure: true, 'max-age': 3600 });
+      setCookie('level', 13, { secure: true, 'max-age': 3600 });
+  </script>
+</head>
+<body>
+  <script src="./countCookies.js"></script>
+</body>
+</html>
