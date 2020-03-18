@@ -2,6 +2,7 @@
 const cookie = document.cookie
 // don't touch
 
+// 1.
 /**
  * pass in document.cookie and return the number of cookies
  *
@@ -17,8 +18,9 @@ function countCookie(cookie) {
 // countCookie(cookie) 
 // don't touch
 
+// 2. 
 /**
- * find persistent cookies
+ * find persistent cookies and delete them
  *
  * See if the cookie has a max-age above 30000 and reset
  * @param {*} cookie
@@ -32,19 +34,17 @@ function findPersistantCookies(cookie) {
 // findPersistantCookies(cookie) 
 // don't touch
 
-// set a cookie, not in a function, that will be accessible across the entire domain using JavaScript.
-//console.log(document.cookie) // on completion
-
-
-
-
-
-/***********
- * 
- */
-// utility method used for example
+// 3.
 /**
- * Sets a cookie by name, value and any associated options
+ * We won't be using a function here. Just simply the cookie API. Add a 
+ * path attribute option as mentioned in this weeks lab material. Set
+ * that path for the entire domain of the site. Hint: '/' is the char
+ * 
+ * */
+
+
+/**
+ * just used to create cookies for exercises
  *
  * @param {*} name
  * @param {*} value
@@ -73,8 +73,6 @@ function setCookie(name, value, options = {}) {
 
   document.cookie = updatedCookie
 }
-
-
 
 setCookie('user', 'John', { secure: true, 'max-age': 3600 })
 setCookie('points', 36, { secure: true, 'max-age': 3600 })
