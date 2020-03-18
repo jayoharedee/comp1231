@@ -63,3 +63,27 @@ As you can see, I've truncrated a great portion of what's console logged. What s
 How many cookies are stored in the above code snippet? If you said two, you are correct. The two cookies found in the `allTheCookies` variable were `edgebucket` and `csv`. Both these keys are seperated from their value with an `=`. For example - the value for the `csv` key is `1`. Remember all of this is coming from the cookie object courtesy of `document`. We were able to observe this by executing document.cookie in the JS console. Try your favorite page, see what info they have hidden in their cookie object.
 
 ## Creating Cookies
+If we were to take a close a look at a cookie which is `key=value`, we know that to create a cookie we must have 2 things.
+
+  * A Key
+  * A value associated with the key
+
+Let's create some cookies that are relevant to this course
+```js
+document.cookie = 'course=comp1231'
+console.log(document.cookie)
+// output: course=comp1231;
+```
+
+Notice that we are using the assignment operator above to create this value. This operator would typically overwrite any previous data stored. `document.cookie` is engineered to be an object. When we console log `document.cookie` it's returns as a string but the property itself is actually an object. Patterns are used known as getters and setters that allow us to continually assign values to the cookie.
+
+You try it out in your browser.
+
+```js
+document.cookie = 'course=comp1231'
+document.cookie = 'school=GBC'
+document.cookie = 'class=javascript'
+document.cookie = 'semester=2'
+```
+
+Judging by the above snippet we should have re-assigned the value of document.cookie several times. However due to the mechanics of document.cookie, we're ale to continually add to the cookie object. Try pasting the above in your console and then calling the `document.cookie` object.
