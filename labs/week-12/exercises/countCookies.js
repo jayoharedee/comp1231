@@ -15,7 +15,7 @@ function countCookie(cookie) {
 
 // uncomment function when finished, remember the console is your friend
 // don't touch
-// countCookie(cookie) 
+// countCookie(cookie) // uncomment when testing
 // don't touch
 
 // 2. 
@@ -31,7 +31,7 @@ function findPersistantCookies(cookie) {
 }
 
 // don't touch
-// findPersistantCookies(cookie) 
+// findPersistantCookies(cookie) // uncomment when testing
 // don't touch
 
 // 3.
@@ -46,9 +46,9 @@ function findPersistantCookies(cookie) {
 /**
  * just used to create cookies for exercises
  *
- * @param {*} name
- * @param {*} value
- * @param {*} [options={}]
+ * @param {*} name of the cookie
+ * @param {*} value of the cookie
+ * @param {*} [options={}] any additional options for the cookie
  */
 function setCookie(name, value, options = {}) {
   options = {
