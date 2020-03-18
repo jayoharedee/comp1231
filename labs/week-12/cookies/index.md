@@ -84,6 +84,87 @@ document.cookie = 'course=comp1231'
 document.cookie = 'school=GBC'
 document.cookie = 'class=javascript'
 document.cookie = 'semester=2'
+
+// outpuit: course=comp1231; school=GBC; class=javascript; semester=2;
 ```
 
 Judging by the above snippet we should have re-assigned the value of document.cookie several times. However due to the mechanics of document.cookie, we're ale to continually add to the cookie object. Try pasting the above in your console and then calling the `document.cookie` object.
+
+```js
+document.cookie = 'dog_name=fluffy';
+document.cookie = 'cat_name = garfield';
+ 
+console.log(document.cookie); // "dog_name=fluffy; cat_name=garfield"
+```
+
+As you can see, even if we assign a new value for document.cookie, it gets handled by the setter. The space around the assignment operator is not mandatory.
+
+Since it is all stored in one string, you need to figure out a way to get a very specific part of the cookie. You can do it in many ways since it is just operating on a string:
+
+```js
+// Fetch a cookie by name
+function getCookie(name) {
+  let matches = document.cookie.match(
+    new RegExp(
+      "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+    )
+  );
+  return matches ? decodeURIComponent(matches[1]) : undefined;
+}
+```
+
+## Reading Cookies
+Reading cookies is really simple, you just reference `document.cookie` to see what's in store. If you need something specific, you can use one of the many String methods like `.find()`.
+
+Now, if you wanted a nice utility method to set cookies from [Javascript Info](https://javascript.info), they havbe a document showing an elegant solution for setting cookies.
+
+```js
+function setCookie(name, value, options = {}) {
+
+  options = {
+    path: '/',
+    // add other defaults here if necessary
+    ...options
+  };
+
+  if (options.expires instanceof Date) {
+    options.expires = options.expires.toUTCString();
+  }
+
+  let updatedCookie = encodeURIComponent(name) + "=" + encodeURIComponent(value);
+
+  for (let optionKey in options) {
+    updatedCookie += "; " + optionKey;
+    let optionValue = options[optionKey];
+    if (optionValue !== true) {
+      updatedCookie += "=" + optionValue;
+    }
+  }
+
+  document.cookie = updatedCookie;
+}
+
+// Example of use:
+setCookie('user', 'John', {secure: true, 'max-age': 3600});
+```
+
+## Deleting Cookies
+As we're working with a weird string/object thing, we have a few advantages to ensure that the cookie is a little more robust. When we set our cookies when assigning a key/value pair included with a `;` to terminate the cookie, we can also pass some additional parameters for the security of our document.
+
+Here are some of the attributes that can be included
+  * ;path=path
+    * defaults to current path of document
+  * ;domain=domain 
+    * (e.g., 'example.com' or 'subdomain.example.com'). If not specified, this defaults to the host portion of the current document location
+  * ;max-age=max-age-in-seconds
+    * e.g., 31536000 for a year 
+
+Looking at the last option above, we can use the fact that cookie will acceot a max-age as an option. If we wanted to build a utility funtion that can be used to parse cookies, we can rely on the code from below.
+
+```js
+function deleteCookie(name) {
+  setCookie(name, "", {
+    'max-age': -1
+  })
+}
+```
