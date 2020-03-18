@@ -24,7 +24,7 @@ console.log(cookieJar['flavour'])
 // output: 'chocolate chip'
 ```
 
-If we observe two lines above, specificially where the key is assigned a value, and then pay attention to the retrieval of the value in the console logs, we can see an example of key/value storage used.
+If we observe two lines above, specificially where the key is assigned a value, and then pay attention to the retrieval of the value in the console logs, we can see an example of key/value storage being used.
 
 One more example
 
@@ -32,18 +32,18 @@ One more example
 const cookieDough = {}
 cookieDough.flavour = 'Birthday Cake'
 
-console.log(cookieDough.flavor)
+console.log(cookieDough.flavour)
 // output: 'Birthday Cake'
 ```
 
-Just as we have objects to store and retreive data in JavaScript, we also have the notorious `cookie`. To be specific - a cookie is a small piece of data that a server sends to the users browser in order to transfer information. The data is sent in the form of key/value storage.
+Just as we have objects to store and retreive data in JavaScript, we also have the notorious `cookie`. To be specific - a cookie is a small piece of data that a server can send to the users browser in order to transfer information. The data is sent in the form of key/value storage.
 
 Cookies aren't just for HTTP use, we can also leverage them in our own applications. JavaScript has an odd API to offer when interacting with cookies but we'll get through it.
 
-We've been introduced to the `document` object, used some methods found within it such as `.querySelector()` and `.getElementById()` to parse HTML elements with JS. The `document` object is filled with properties which represent the page that is loaded in the browser. Just as an example, `document.location` will always return an object which provides details on the documents location. Try running it in your console.
+We've been introduced to the `document` object, used some methods found within it such as `.querySelector()` and `.getElementById()` to parse HTML elements with JS. The `document` object is filled with properties which represent the page that is loaded in the browser. For example, `document.location` will always return an object which provides details on the documents location. Try running it in your console.
 
 ## Cookie Introduction
-Just like we can retrieve all the information on our documents location, we can do the same with `cookie`. To find out what cookies may have been set by the server or perhaps locally executed with JS code, let's see cookies are on our document. What document are we on though?
+Just like we can retrieve all the information on our documents location, we can do the same with `cookie`. To find out what cookies may have been set by the server or perhaps locally set with JS code, let's see cookies what's in our document's cookie. What document are we on though? Let's sort that out.
 
 1. Open a browser
 2. Navigate to [Reddit](https://reddit.com)
@@ -58,12 +58,12 @@ console.log(allTheCookies)
 "edgebucket=9a2uKIeIyenX2ZISiY;  csv=1; "
 ```
 
-As you can see, I've truncrated a great portion of what's console logged. What should be apparent here though is that we have a key value storage pattern. It's not exactly the same as the previous example when we used object, but the point here is the left hand side is a variable for a value. The `=` is used to delimit the variable from the value. The semicolon terminates the key/value combination and makes it official.
+As you can see, I've truncrated a great portion of what's been logged in the console. What should be apparent here is that we have a key value storage pattern. It's not exactly the same as the previous example when we used object, but what we should notice is that the  left hand side is a variable meant to hold a value. The `=` is used to delimit the variable from the value. The semicolon terminates the key/value combination and makes it official.
 
-How many cookies are stored in the above code snippet? If you said two, you are correct. The two cookies found in the `allTheCookies` variable were `edgebucket` and `csv`. Both these keys are seperated from their value with an `=`. For example - the value for the `csv` key is `1`. Remember all of this is coming from the cookie object courtesy of `document`. We were able to observe this by executing document.cookie in the JS console. Try your favorite page, see what info they have hidden in their cookie object.
+How many cookies are stored in the above code snippet? If you said two, you are correct. The two cookies found in the `allTheCookies` variable were `edgebucket` and `csv`. Both of these keys are seperated from their value with an `=`. For example - the value for the `csv` key is `1`. Remember all of this is coming from the cookie object courtesy of `document`. We were able to observe this by executing document.cookie in the JS console. Try your favorite page, see what info they have hidden in their cookie object.
 
 ## Creating Cookies
-If we were to take a close a look at a cookie which is `key=value`, we know that to create a cookie we must have 2 things.
+If we were to take a close a look at a cookie which is in a `key=value;` format, we know that to create a cookie we must have 2 things.
 
   * A Key
   * A value associated with the key
@@ -75,7 +75,7 @@ console.log(document.cookie)
 // output: course=comp1231;
 ```
 
-Notice that we are using the assignment operator above to create this value. This operator would typically overwrite any previous data stored. `document.cookie` is engineered to be an object. When we console log `document.cookie` it's returns as a string but the property itself is actually an object. Patterns are used known as getters and setters that allow us to continually assign values to the cookie.
+Notice that we are using the assignment operator above to create this value. This operator would typically overwrite any previous data stored. `document.cookie` is engineered to be an object. When we console log `document.cookie` it's returns as a string but the property itself is actually an object. In computer science there are various patterns and cookie was engineered to make use of two, known as a 'getter' and a 'setter'. You don't need to know more than that when working with cookies. Just know because of it's development, cookies can be re-assigned values unlike regular variables.
 
 You try it out in your browser.
 
@@ -88,7 +88,7 @@ document.cookie = 'semester=2'
 // outpuit: course=comp1231; school=GBC; class=javascript; semester=2;
 ```
 
-Judging by the above snippet we should have re-assigned the value of document.cookie several times. However due to the mechanics of document.cookie, we're ale to continually add to the cookie object. Try pasting the above in your console and then calling the `document.cookie` object.
+Judging by the above snippet we should have re-assigned the value of document.cookie several times. However due to the mechanics of `document.cookie`, we're ale to continually add to the cookie object. Try pasting the above in your console and then calling the `document.cookie` object.
 
 ```js
 document.cookie = 'dog_name=fluffy';
@@ -97,9 +97,9 @@ document.cookie = 'cat_name = garfield';
 console.log(document.cookie); // "dog_name=fluffy; cat_name=garfield"
 ```
 
-As you can see, even if we assign a new value for document.cookie, it gets handled by the setter. The space around the assignment operator is not mandatory.
+As you can see, even if we assign a new value for `document.cookie`, it gets handled by the setter. The space around the assignment operator is not mandatory.
 
-Since it is all stored in one string, you need to figure out a way to get a very specific part of the cookie. You can do it in many ways since it is just operating on a string:
+Since it is all stored in one string, you need to figure out a way to get a very specific part of the cookie. You can do it in many ways since it is just operating on a string. Try being creative and find the key/value that you're looking for on a page of your choice. Feel free to use the method below to get a sense of how we can fetch cookies.
 
 ```js
 // Fetch a cookie by name
@@ -116,7 +116,9 @@ function getCookie(name) {
 ## Reading Cookies
 Reading cookies is really simple, you just reference `document.cookie` to see what's in store. If you need something specific, you can use one of the many String methods like `.find()`.
 
-Now, if you wanted a nice utility method to set cookies from [Javascript Info](https://javascript.info), they havbe a document showing an elegant solution for setting cookies.
+Now, if you wanted a nice utility method to set cookies, [Javascript Info](https://javascript.info/cookies), have a document showing a number of helper methods when dealing with cookies.
+
+Here we can set a cookie:
 
 ```js
 function setCookie(name, value, options = {}) {
@@ -149,7 +151,7 @@ setCookie('user', 'John', {secure: true, 'max-age': 3600});
 ```
 
 ## Deleting Cookies
-As we're working with a weird string/object thing, we have a few advantages to ensure that the cookie is a little more robust. When we set our cookies when assigning a key/value pair included with a `;` to terminate the cookie, we can also pass some additional parameters for the security of our document.
+As we're working with a weird string/object thing, we have a few advantages to ensure that the cookie is a little more robust. When we set our cookies, we're assigning key/value pairs including a `;` to terminate the cookie, we can also pass some additional parameters for the security of our document.
 
 Here are some of the attributes that can be included
   * ;path=path
@@ -159,7 +161,7 @@ Here are some of the attributes that can be included
   * ;max-age=max-age-in-seconds
     * e.g., 31536000 for a year 
 
-Looking at the last option above, we can use the fact that cookie will acceot a max-age as an option. If we wanted to build a utility funtion that can be used to parse cookies, we can rely on the code from below.
+Looking at the last option above, we can use the fact that cookies will accept a max-age as an option, so we can essentially expire them. If we wanted to build a utility funtion that can be used to parse cookies, we can rely on the code from below.
 
 ```js
 function deleteCookie(name) {
