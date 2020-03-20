@@ -67,4 +67,4 @@ function alertCookie(cookie) {
    * to help complete this process.
    */
 
-  //document.body.style.backgroundColor = <value of bgColor>
+  // document.body.style.backgroundColor = <value of bgColor>
