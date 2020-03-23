@@ -2,6 +2,8 @@
 
 Looking back at the previous week we've been introduced to a concept known as key/value storage. A key is defined a value, and the value is retrieved when the key is called.
 
+## How to Use
+There are A LOT of events that we can use, you'd be surprised here is a nicely curated [list](https://developer.mozilla.org) by the [Mozilla Developer Network](https://developer.mozilla.org). 
 
 ## Object Review
 ```js
