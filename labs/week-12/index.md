@@ -113,11 +113,11 @@ function getCookie(name) {
 ```
 
 ## Reading Cookies
-Reading cookies is really simple, you just reference `document.cookie` to see what's in store. If you need something specific, you can use one of the many String methods like `.find()`.
+Reading cookies can be quite involved as we're searching a string for a key and/or value. Everyone has their own way of doing things, some choose to write their own methods using loops while others will be using methods found from online resources. Looking up a cookie up by name is a common problem so it has become a one of those problems that developers compete at solving most optimally. 
 
-Now, if you wanted a nice utility method to set cookies, [Javascript Info](https://javascript.info/cookies), have a document showing a number of helper methods when dealing with cookies.
+Now, if you wanted a nice utility method to set cookies, [Javascript Info](https://javascript.info/cookies), will have you covered. They also offer a solution using a regular expression to find a cookie by name.
 
-Here we can set a cookie:
+Here we have a robust solution for creating cookies:
 
 ```js
 function setCookie(name, value, options = {}) {
@@ -150,17 +150,17 @@ setCookie('user', 'John', {secure: true, 'max-age': 3600});
 ```
 
 ## Deleting Cookies
-As we're working with a weird string/object thing, we have a few advantages to ensure that the cookie is a little more robust. When we set our cookies, we're assigning key/value pairs including a `;` to terminate the cookie, we can also pass some additional parameters for the security of our document.
+As we're working with a weird string/object thing, we have a few advantages over just using a string to store the key/pai values. When we set our cookies, we're assigning key/value pairs including a `;` to terminate the cookie, we can also pass some additional parameters for the security of our document.
 
 Here are some of the attributes that can be included
-  * ;path=path
+  * path=path;
     * defaults to current path of document
-  * ;domain=domain 
+  * domain=domain;
     * (e.g., 'example.com' or 'subdomain.example.com'). If not specified, this defaults to the host portion of the current document location
-  * ;max-age=max-age-in-seconds
+  * max-age=max-age-in-seconds;
     * e.g., 31536000 for a year 
 
-Looking at the last option above, we can use the fact that cookies will accept a max-age as an option, so we can essentially expire them. If we wanted to build a utility funtion that can be used to parse cookies, we can rely on the code from below.
+Looking at the last option above, we can use the fact that cookies will accept a max-age as an option, so we can essentially expire them. If we wanted to build a utility funtion that can be used to parse cookies, we can combine our previous method used to set cookies. Find `setCookie` invoked inside a new function called deleteCookie below. These two methods together will allow us to "delete" a cookie.
 
 ```js
 function deleteCookie(name) {
