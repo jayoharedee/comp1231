@@ -42,7 +42,7 @@ Cookies aren't just for HTTP use, we can also leverage them in our own applicati
 We've been introduced to the `document` object, used some methods found within it such as `.querySelector()` and `.getElementById()` to parse HTML elements with JS. The `document` object is filled with properties which represent the page that is loaded in the browser. For example, `document.location` will always return an object which provides details on the documents location. Try running it in your console.
 
 ## Cookie Introduction
-Just like we can retrieve all the information on our documents location, we can do the same with `cookie`. To find out what cookies may have been set by the server or perhaps locally set with JS code, let's see cookies what's in our document's cookie. What document are we on though? Let's sort that out.
+Just like we can retrieve all the information on our documents location, we can do the same with `cookie`. To find out what cookies may have been set by the server or perhaps locally set with JS code, let's see what cookies are stored in our document's cookie property. What document are we on though? Let's sort that out.
 
 1. Open a browser
 2. Navigate to [Reddit](https://reddit.com)
@@ -113,9 +113,9 @@ function getCookie(name) {
 ```
 
 ## Reading Cookies
-Reading cookies can be quite involved as we're searching a string for a key and/or value. Everyone has their own way of doing things, some choose to write their own methods using loops while others will be using methods found from online resources. Looking up a cookie up by name is a common problem so it has become a one of those problems that developers compete at solving most optimally. 
+Reading cookies can be quite involved as we're searching a string for a key and/or value. Everyone has their own way of doing things, some choose to write their own implementations using loops while others will be using methods found from online resources. Looking up a cookie up by name is a common problem so it has become one of those problems that developers compete at solving most optimally. 
 
-Now, if you wanted a nice utility method to set cookies, [Javascript Info](https://javascript.info/cookies), will have you covered. They also offer a solution using a regular expression to find a cookie by name.
+Now, if you wanted a nice utility method to set cookies, [Javascript Info](https://javascript.info/cookies), will have you covered. They also offer a solution using a regular expression to find a cookie by name, which you've used above.
 
 Here we have a robust solution for creating cookies:
 
@@ -150,7 +150,7 @@ setCookie('user', 'John', {secure: true, 'max-age': 3600});
 ```
 
 ## Deleting Cookies
-As we're working with a weird string/object thing, we have a few advantages over just using a string to store the key/pai values. When we set our cookies, we're assigning key/value pairs including a `;` to terminate the cookie, we can also pass some additional parameters for the security of our document.
+We have a few advantages using a string to store our key/pair values. When we set our cookies, we're assigning key/value pairs including a `;` to terminate the cookie, we can also pass some additional parameters for the security of our document.
 
 Here are some of the attributes that can be included
   * path=path;
@@ -160,7 +160,7 @@ Here are some of the attributes that can be included
   * max-age=max-age-in-seconds;
     * e.g., 31536000 for a year 
 
-Looking at the last option above, we can use the fact that cookies will accept a max-age as an option, so we can essentially expire them. If we wanted to build a utility funtion that can be used to parse cookies, we can combine our previous method used to set cookies. Find `setCookie` invoked inside a new function called deleteCookie below. These two methods together will allow us to "delete" a cookie.
+Looking at the last option above, we can see cookies will accept a `max-age` option, so we can go back in time and essentially expire them. If we wanted to build a utility function that can be used to parse cookies, we can combine our previous method used to set cookies. Find `setCookie` invoked inside a new function called deleteCookie below. These two methods together will allow us to "delete" a cookie.
 
 ```js
 function deleteCookie(name) {
