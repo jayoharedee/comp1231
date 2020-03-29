@@ -203,3 +203,24 @@ console.log(d.hasOwnProperty);
 ```
 
 We will be exploring inheritance and the prototype chain more in-depth in future classes, but for now, have fun creating objects and accessing their values.
+
+```js
+const myObject = {}
+myObject.phone = '6478195555'
+myObject.name = 'Phil'
+
+console.log(myObject)
+console.log(myObject.name)
+
+const groceries = {
+  fruit: 'Kiwi',
+  meat: 'Chicken',
+  vegetables: 'Broccoli'
+}
+
+groceries.fruit
+groceries.meat
+
+groceries['fruit']
+groceries['meat']
+```
