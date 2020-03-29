@@ -13,3 +13,5 @@ All Lab source can be found below.
 | 5             | Lab Test                          | [Lab 5](./labs/week-05/test) |
 | 8             | Intersession challenges           | [Exercises](./labs/week-08/) |
 | 9             | Intersession challenges           | [Exercises](./labs/week-09/) |
+| 10         | Working with objects            | [Lab 10](./labs/week-10/)
+| 12         | Working with objects            | [Lab 12](./labs/week-12/)

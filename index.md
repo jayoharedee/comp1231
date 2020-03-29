@@ -34,3 +34,4 @@
 | 5             | Lab Test                          | [Lab 5](./labs/week-05/test)
 | 6 & 7         | Working with functions            | [Lab 6 & 7](./labs/functions/challenges)
 | 10         | Working with objects            | [Lab 10](./labs/week-10/)
+| 12         | Working with objects            | [Lab 12](./labs/week-12/)

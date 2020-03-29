@@ -171,6 +171,26 @@ const car1 = new Car('Eagle', 'Talon TSi', 1993, rand)
 const car2 = new Car('Nissan', '300ZX', 1992, ken)
 ```
 
+## Accessing DOM Nodes With JS
+```html
+<p id="p1"></p1>
+```
+
+```js
+function Toy(make, model, year) {
+  this.make = make
+  this.model = model
+  this.year = year
+  
+  this.getToy = function() {
+    return `The toy is a ${this.make} it's model is ${this.model} and the year is ${this.year}`
+  }
+ }
+ 
+ const roggerRabbit = new Toy('Roger Rabbit', 'Deluxe addition', 1988)
+ document.getElementById('p1').innerHTML = roggerRabbit.getToy()
+```
+
 Note that you can always add a property to a previously defined object. For example, the statement
 `car1.color = 'black'`
 
@@ -203,7 +223,6 @@ console.log(d.hasOwnProperty);
 ```
 
 We will be exploring inheritance and the prototype chain more in-depth in future classes, but for now, have fun creating objects and accessing their values.
-
 ```js
 const myObject = {}
 myObject.phone = '6478195555'
