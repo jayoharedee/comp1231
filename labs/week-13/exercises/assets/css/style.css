@@ -1,0 +1,42 @@
+#root {
+  background: cornflowerblue;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#box {
+  width: 50vw;
+  height: 50vh;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.content-areas {
+  width: 95%;
+  margin: 5%;
+  color: honeydew;
+  height: 20vh;
+  font-size: 2vw;
+}
+
+#ul-virus {
+  color: red;
+  font-size: 1.8rem;
+  list-style: none;
+}
+
+#button-background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

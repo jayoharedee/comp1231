@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 13</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script async src="./events.js"></script>
+</head>
+ 
+<body id="root">
+  <h1 class="header">Week 12 - Your Student ID - Topic: Events</h1>
+
+  <h2 class="header">Mouse Events</h2>
+
+  <!-- <p id="box">
+    Move your mouse around here
+  </p> -->
+
+
+  <h2 class="header">Keyboard Events</h2>
+
+  <div class="content-areas">
+    Try taking a look at the source code in the index.js which is wired to this document with a script tag at the bottom of a page. Try pressing a key on your keyboard, you'll be alerted of the key you pressed.
+
+    Also, try a combination key using the ctrlKey. You'll also notice a key combination will get alerted. Javascript's 'keyup' and 'keydown' events can be used to capture user input when a key is pressed and released. 
+  </div>
+
+  <h2 class="header">Inline Event Handlers - Don't use these</h2>
+  <div class="content-areas">
+    For a start, it is not a good idea to mix up your HTML and your JavaScript, as it becomes hard to parse — keeping your JavaScript all in one place is better; if it is in a separate file you can apply it to multiple HTML documents.
+
+    Even in a single file, inline event handlers are not a good idea. One button is OK, but what if you had 100 buttons? You'd have to add 100 attributes to the file; it would very quickly turn into a maintenance nightmare. Let's add a button below with an inline event called bgChange. The background should change on click. 
+  </div>
+
+  <div id="button-background">
+    <button onclick="bgChange()">Change Background</button>
+  </div>
+
+  <div class="content-areas">
+    Click on one of the virus's below to eradicate it. This uses the click event.
+    <ul id="ul-virus">
+      <li class="line-item">Corona</li>
+      <li class="line-item">COVID</li>
+      <li class="line-item">Spanish Flu</li>
+      <li class="line-item">Black Plague</li>
+    </ul>
+  </div>
+  <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
