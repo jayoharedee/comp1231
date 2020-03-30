@@ -66,11 +66,14 @@ document.addEventListener('keyup', (event) => {
  * Click Events
  * 
  * We will create a function that puts a strike through 
- * the text we click.
+ * the text we click.  Notice since we are using classes 
+ * that we must loop through all classes found.
  */
-const lineItem = document.querySelector('.line-item')
-lineItem.addEventListener('click', function(event) {
-  lineItem.style.textDecoration = 'line-through'
+const lineItem = document.querySelectorAll('.line-item')
+lineItem.forEach(function(li) {
+  li.addEventListener('click', function(event) {
+    li.style.textDecoration = 'line-through'
+  })
 })
 
 

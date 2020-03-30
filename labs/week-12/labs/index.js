@@ -11,6 +11,8 @@ const cookie = document.cookie
 // using the document object which represents our page, we have a setter property known as `.cookie`. Let's create a cookie using this method.
 document.cookie = 'bgColor=red'
 document.cookie = 'user_ip=192.168.0.0.10'
+document.cookie = 'geoLocation=Moldova'
+document.cookie = 'browser=firefox'
 
 // create two more cookies using the above syntax.
 // create a function that will alert all the cookies in the document.
@@ -22,7 +24,7 @@ document.cookie = 'user_ip=192.168.0.0.10'
  * @param {*} cookie
  */
 function alertCookie(cookie) {
-  // alert()
+  alert(cookie)
 }
 
 //alertCookie()
@@ -36,6 +38,7 @@ function alertCookie(cookie) {
  * the method provided in the lecture material for expiring cookies. 
  * 
 */
+document.cookie = 'bgColor=aquamarine'
 
 // Exercise 3 - Fetching Specific Cookies
 /**
@@ -45,6 +48,19 @@ function alertCookie(cookie) {
  * cookie we are looking for is the 'user_ip' cookie. Once 
  * found, you'll want to log it to the console.
  */
+function getCookie(name) {
+  let matches = document.cookie.match(
+    new RegExp(
+      '(?:^|; )' +
+        name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') +
+        '=([^;]*)'
+    )
+  )
+  return matches ? decodeURIComponent(matches[1]) : undefined
+}
+
+const deleteIpCookie = getCookie('user_ip')
+console.log(deleteIpCookie)
 
  // Exercise 4 - Setting domain paths in your cookie.
  /**
@@ -52,13 +68,28 @@ function alertCookie(cookie) {
   * will be referencing the lecture material and assign a path to our 
   * document cookie. The path that we want is for the root domain AKA '/'
   */
-
+document.cookie = 'path=/;'
   // Exercise 5 - Deleting Cookies
   /**
    * Referencing the lecture material, find the method responsible for 
    * expiring cookies. Expire all cookies except for the bgColor cookie.
    */
+function deleteAllCookies() {
+  var cookies = document.cookie.split(';')
 
+  for (var i = 0; i < cookies.length; i++) {
+    if (name === 'bgColor') {
+      continue
+    }
+
+    var cookie = cookies[i]
+    var eqPos = cookie.indexOf('=')
+    var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie
+    document.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:00 GMT'
+  }
+}
+
+// deleteAllCookies()
   // Exercise 6 - Using Cookies
   /**
    * In this exercise we will be reading the value from the bgColor 
@@ -66,5 +97,4 @@ function alertCookie(cookie) {
    * of methods provided in the lecture material. Please reference them 
    * to help complete this process.
    */
-
-  // document.body.style.backgroundColor = <value of bgColor>
+//document.body.style.backgroundColor = yourVariableHere
