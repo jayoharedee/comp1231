@@ -288,3 +288,116 @@ buttons.forEach((button) => {
 });
 ```
 This is just the tip of the iceberg when it comes to DOM manipulation and event handling, but it’s enough to get you started with some exercises. In our examples so far we have been using the ‘click’ event exclusively, but there are many more available to you.
+
+## This
+A function's this keyword behaves a little differently in JavaScript compared to other languages. It also has some differences between strict mode and non-strict mode.
+
+In most cases, the value of this is determined by how a function is called (runtime binding). It can't be set by assignment during execution, and it may be different each time the function is called. ES5 introduced the bind() method to set the value of a function's this regardless of how it's called, and ES2015 introduced arrow functions which don't provide their own this binding (it retains the this value of the enclosing lexical context).
+
+```js
+const test = {
+  prop: 42,
+  func: function() {
+    return this.prop;
+  },
+};
+
+console.log(test.func());
+// expected output: 42
+```
+
+Above, the syntax used in func is `this.func`. A property of an execution context (global, function or eval) that, in non–strict mode, is always a reference to an object and in strict mode can be any value.
+
+In the global execution context (outside of any function), this refers to the global object whether in strict mode or not.
+
+```js
+// In web browsers, the window object is also the global object:
+console.log(this === window); // true
+
+a = 37;
+console.log(window.a); // 37
+
+this.b = "GBC";
+console.log(window.b)  // "GBC"
+console.log(b)         // "GBC"
+```
+
+Inside a function, the value of this depends on how the function is called. 
+
+Since the following code is not in strict mode, and because the value of this is not set by the call, this will default to the global object, which is window in a browser.
+```js
+function f1() {
+  return this;
+}
+
+// In a browser:
+f1() === window; // true
+```
+In strict mode, however, if the value of this is not set when entering an execution context, it remains as undefined, as shown in the following example:
+
+```js
+function f2() {
+  'use strict'; // see strict mode
+  return this;
+}
+
+f2() === undefined; // true
+```
+
+>In the second example, this should be undefined, because f2 was called directly and not as a method or property of an object (e.g. window.f2()). This feature wasn't implemented in some browsers when they first started to support strict mode. As a result, they incorrectly returned the window object.
+
+### Arrow Functions & this
+In arrow functions, this retains the value of the enclosing lexical context's this. In global code, it will be set to the global object:
+```js
+var globalObject = this;
+var foo = (() => this);
+console.log(foo() === globalObject); // true
+```
+
+### As an object method
+When a function is called as a method of an object, its this is set to the object the method is called on.
+
+In the following example, when o.f() is invoked, inside the function this is bound to the o object.
+```js
+var o = {
+  prop: 37,
+  f: function() {
+    return this.prop;
+  }
+};
+
+console.log(o.f()); // 37
+```
+
+### As a DOM event handler
+When a function is used as an event handler, its this is set to the element on which the listener is placed (some browsers do not follow this convention for listeners added dynamically with methods other than addEventListener()).
+```js
+// When called as a listener, turns the related element blue
+function bluify(e) {
+  // Always true
+  console.log(this === e.currentTarget);
+  // true when currentTarget and target are the same object
+  console.log(this === e.target);
+  this.style.backgroundColor = '#A5D9F3';
+}
+
+// Get a list of every element in the document
+var elements = document.getElementsByTagName('*');
+
+// Add bluify as a click listener so when the
+// element is clicked on, it turns blue
+for (var i = 0; i < elements.length; i++) {
+  elements[i].addEventListener('click', bluify, false);
+}
+```
+
+### Removing an Event Listener
+Given an event listener previously added by calling addEventListener(), you may eventually come to a point at which you need to remove it. Obviously, you need to specify the same type and listener parameters to removeEventListener()
+
+If we were to use the previous example, we would need to ensure that the signature for the event listener is identical to the removeEventListener. If we were to leave out `false` on the previous method, we would fail to remove the event listener.
+
+```js
+for (var i = 0; i < elements.length; i++) {
+  elements[i].removeEventListener('click', bluify, false);
+}
+```
