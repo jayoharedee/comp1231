@@ -15,3 +15,4 @@ All Lab source can be found below.
 | 9             | Intersession challenges           | [Exercises](./labs/week-09/) |
 | 10         | Working with objects            | [Lab 10](./labs/week-10/)
 | 12         | Working with objects            | [Lab 12](./labs/week-12/)
+| 13         | Event handling                  | [Lab 13](./labs/week-13/)

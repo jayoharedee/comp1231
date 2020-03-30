@@ -11,19 +11,7 @@
 
  Reach me by email jmorenstein@georgebrown.ca
 
- <h1>Exercises</h1>
-
-
- | Week          | Topics                            | Link                    |
-| ------------- |:---------------------------------:|:-----------------------:|
-| 1             | JS intro, BASH Intro, GitHub, SSH |  
-| 2             | Basc JS skills, workig with values| [Lab 2](./labs/week-02/exercises)
-| 3             | Conditional Statements            | [Lab 3](./labs/week-03/exercises)
-| 4             | Iteratives (or making stuff loop) | [Lab 4](./labs/week-04/)
-| 6 & 7         | Functions                         | [Lab 6 & 7](./labs/functions) 
-| 10            | Working with objects              | [Lab 10](./labs/week-10/exercises/ex1.js)
-
- <h1>Challenges</h1>
+ <h1>Exercises & Challenges</h1>
 
  | Week          | Topics                            | Link                    |
 | ------------- |:---------------------------------:|:-----------------------:|
@@ -35,3 +23,4 @@
 | 6 & 7         | Working with functions            | [Lab 6 & 7](./labs/functions/challenges)
 | 10         | Working with objects            | [Lab 10](./labs/week-10/)
 | 12         | Working with objects            | [Lab 12](./labs/week-12/)
+| 13         | Event handling                  | [Lab 13](./labs/week-13/)
